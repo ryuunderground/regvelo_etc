@@ -1079,6 +1079,18 @@ class DrugCLIP(UnicoreTask):
 
         return [pocket_names[i] for i in top_k], res[top_k]
 
+    def score_matrix(self, model, mol_path, pocket_path, emb_dir, **kwargs):
+        """Full pocket x molecule similarity matrix. retrieve_mols/retrieve_pockets
+        both truncate to top-k, which throws away most of a small custom panel
+        where every pair is worth inspecting."""
+
+        os.makedirs(emb_dir, exist_ok=True)
+        mol_reps, mol_names = self.encode_mols_once(model, mol_path, emb_dir, "atoms", "coordinates")
+        pocket_reps, pocket_names = self.encode_pockets_once(model, pocket_path, emb_dir)
+
+        res = pocket_reps @ mol_reps.T  # (num_pockets, num_mols)
+        return pocket_names, mol_names, res
+
 
         
 
