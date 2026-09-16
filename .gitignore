@@ -5,6 +5,8 @@ __pycache__/
 # large downloaded artifacts — not committed, re-download via README/commit notes
 DrugCLIP/checkpoint_best.pt
 DrugCLIP/*.lmdb
+DrugCLIP/*.lmdb*.part
+*.pkl
 DrugCLIP/data/emb/
 DrugCLIP/test/
 DrugCLIP/savedir/

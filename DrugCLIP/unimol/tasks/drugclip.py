@@ -984,8 +984,100 @@ class DrugCLIP(UnicoreTask):
         top_k = np.argsort(res)[::-1][:k]
 
         # return names and scores
-        
+
         return [mol_names[i] for i in top_k], res[top_k]
+
+    def encode_pockets_once(self, model, data_path, emb_dir, **kwargs):
+        """Mirror of encode_mols_once for pockets, so a receptor library only
+        gets embedded once and is reused across target-fishing queries."""
+
+        cache_path = os.path.join(emb_dir, data_path.split("/")[-1] + ".pocket.pkl")
+
+        if os.path.exists(cache_path):
+            with open(cache_path, "rb") as f:
+                pocket_reps, pocket_names = pickle.load(f)
+            return pocket_reps, pocket_names
+
+        pocket_dataset = self.load_pockets_dataset(data_path)
+        pocket_reps = []
+        pocket_names = []
+        bsz = 16
+        pocket_data = torch.utils.data.DataLoader(pocket_dataset, batch_size=bsz, collate_fn=pocket_dataset.collater)
+        for _, sample in enumerate(tqdm(pocket_data)):
+            sample = unicore.utils.move_to_cuda(sample)
+            dist = sample["net_input"]["pocket_src_distance"]
+            et = sample["net_input"]["pocket_src_edge_type"]
+            st = sample["net_input"]["pocket_src_tokens"]
+            pocket_padding_mask = st.eq(model.pocket_model.padding_idx)
+            pocket_x = model.pocket_model.embed_tokens(st)
+            n_node = dist.size(-1)
+            gbf_feature = model.pocket_model.gbf(dist, et)
+            gbf_result = model.pocket_model.gbf_proj(gbf_feature)
+            graph_attn_bias = gbf_result
+            graph_attn_bias = graph_attn_bias.permute(0, 3, 1, 2).contiguous()
+            graph_attn_bias = graph_attn_bias.view(-1, n_node, n_node)
+            pocket_outputs = model.pocket_model.encoder(
+                pocket_x, padding_mask=pocket_padding_mask, attn_mask=graph_attn_bias
+            )
+            pocket_encoder_rep = pocket_outputs[0][:,0,:]
+            pocket_emb = model.pocket_project(pocket_encoder_rep)
+            pocket_emb = pocket_emb / pocket_emb.norm(dim=-1, keepdim=True)
+            pocket_emb = pocket_emb.detach().cpu().numpy()
+            pocket_reps.append(pocket_emb)
+            pocket_names.extend(sample["pocket_name"])
+
+        pocket_reps = np.concatenate(pocket_reps, axis=0)
+
+        with open(cache_path, "wb") as f:
+            pickle.dump([pocket_reps, pocket_names], f)
+
+        return pocket_reps, pocket_names
+
+    def retrieve_pockets(self, model, mol_path, pocket_path, emb_dir, k, **kwargs):
+        """Target fishing: fix one (or a few) query ligand(s) and rank a library
+        of candidate receptor pockets by predicted affinity, the reverse of
+        retrieve_mols. mol_path holds the query ligand(s); pocket_path holds
+        the candidate receptor library (the arg names mirror retrieve_mols'
+        for consistency, not because the roles are the same)."""
+
+        os.makedirs(emb_dir, exist_ok=True)
+        pocket_reps, pocket_names = self.encode_pockets_once(model, pocket_path, emb_dir)
+
+        mol_dataset = self.load_retrieval_mols_dataset(mol_path, "atoms", "coordinates")
+        mol_data = torch.utils.data.DataLoader(mol_dataset, batch_size=32, collate_fn=mol_dataset.collater)
+        mol_reps = []
+        for _, sample in enumerate(tqdm(mol_data)):
+            sample = unicore.utils.move_to_cuda(sample)
+            dist = sample["net_input"]["mol_src_distance"]
+            et = sample["net_input"]["mol_src_edge_type"]
+            st = sample["net_input"]["mol_src_tokens"]
+            mol_padding_mask = st.eq(model.mol_model.padding_idx)
+            mol_x = model.mol_model.embed_tokens(st)
+            n_node = dist.size(-1)
+            gbf_feature = model.mol_model.gbf(dist, et)
+            gbf_result = model.mol_model.gbf_proj(gbf_feature)
+            graph_attn_bias = gbf_result
+            graph_attn_bias = graph_attn_bias.permute(0, 3, 1, 2).contiguous()
+            graph_attn_bias = graph_attn_bias.view(-1, n_node, n_node)
+            mol_outputs = model.mol_model.encoder(
+                mol_x, padding_mask=mol_padding_mask, attn_mask=graph_attn_bias
+            )
+            mol_encoder_rep = mol_outputs[0][:,0,:]
+            mol_emb = model.mol_project(mol_encoder_rep)
+            mol_emb = mol_emb / mol_emb.norm(dim=-1, keepdim=True)
+            mol_emb = mol_emb.detach().cpu().numpy()
+            mol_reps.append(mol_emb)
+        mol_reps = np.concatenate(mol_reps, axis=0)
+
+        # (num_pockets, num_query_ligands); max over ligand queries handles
+        # multiple analogs/conformers the same way retrieve_mols handles
+        # multiple pocket conformations.
+        res = pocket_reps @ mol_reps.T
+        res = res.max(axis=1)
+
+        top_k = np.argsort(res)[::-1][:k]
+
+        return [pocket_names[i] for i in top_k], res[top_k]
 
 
         
