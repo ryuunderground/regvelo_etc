@@ -1,0 +1,7 @@
+check,value,note
+total_library_entries,2942719,DrugCLIP/mols.lmdb full compound count
+loose_bisphenol_substructure_matches,51,"SMARTS [#6](-c1[cH][cH]c(O)[cH][cH]1)-c1[cH][cH]c(O)[cH][cH]1 (carbon bonded to two unsubstituted para-hydroxyphenyl rings), scanned across all 2942719 entries in 74.5s"
+bisphenol_sized_matches_mw_lt_350,14,of the 51 matches, only 14 are bisphenol-scale molecules (MW<350); the rest are larger drug-like scaffolds that coincidentally embed the motif
+bpa_exact_duplicate_count_in_full_library,2,BPA's own exact SMILES appears twice in the 2.94M library (a natural duplicate)
+bisphenol_relatives_in_our_20000_random_sample,0,"none of the ~14 rare bisphenol-scale relatives (other than the BPA we manually appended) landed in the 20000-compound random sample (seed=1) -- expected, since 20000/2942719 = 0.68% sampling rate against only ~14 candidates in the full library"
+conclusion,,"BPA ranking 3rd of 20001 in library_ranking.csv means 3rd among a general drug-like screening library that essentially contains no other bisphenol-class compounds to begin with, not 3rd among real competing endocrine disruptors. Model still gets credit for ranking a genuine estrogenic phenol far above the bulk of unrelated chemistry, but this is not evidence it would beat other known ER ligands (genistein, DES, nonylphenol, parabens, etc.) -- those were never in the candidate pool and would need to be added explicitly for a fair comparison."
