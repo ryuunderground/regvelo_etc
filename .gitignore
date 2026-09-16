@@ -12,3 +12,4 @@ DrugCLIP/test/
 DrugCLIP/savedir/
 DrugCLIP/tmp_save_dir/
 DrugCLIP/tsb_dir/
+bpa_panel/*.lmdb-lock
