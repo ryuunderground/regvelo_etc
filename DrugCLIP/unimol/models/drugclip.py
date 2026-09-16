@@ -71,7 +71,9 @@ class BindingAffinityModel(BaseUnicoreModel):
             args.mol.encoder_embed_dim, 128, "relu"
         )
 
-        self.logit_scale = nn.Parameter(torch.ones([1], device="cuda") * np.log(14))
+        # ponytail: hardcoded device="cuda" crashes on CPU-only machines;
+        # the param is just a scalar temperature, .cuda() elsewhere moves it if needed.
+        self.logit_scale = nn.Parameter(torch.ones([1]) * np.log(14))
         
 
         
