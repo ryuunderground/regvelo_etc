@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+
+# large downloaded artifacts — not committed, re-download via README/commit notes
+DrugCLIP/checkpoint_best.pt
+DrugCLIP/*.lmdb
+DrugCLIP/data/emb/
+DrugCLIP/test/
+DrugCLIP/savedir/
+DrugCLIP/tmp_save_dir/
+DrugCLIP/tsb_dir/

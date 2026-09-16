@@ -1,0 +1,17 @@
+torch==2.0.1
+rdkit==2022.9.5
+numpy<2
+pandas
+scipy
+scikit-learn
+lmdb
+biopandas
+biopython
+networkx
+selfies
+tqdm
+ml_collections
+tensorboardX
+tokenizers
+iopath
+wandb
