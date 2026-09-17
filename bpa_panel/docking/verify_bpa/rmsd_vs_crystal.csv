@@ -1,0 +1,4 @@
+receptor,naive_rmsd_angstrom,symmetry_aware_best_rmsd_angstrom,model_self_reported_confidence,note
+ERalpha,3.7053910598573245,0.5472138603015123,12.630257606506348,3UU7; BPA is the real bound ligand (chem component 2OH) in this crystal structure
+ERRgamma,3.369120551158016,0.5535391328715636,11.757976531982422,2E2R; BPA is the real bound ligand (chem component 2OH) in this crystal structure
+PPARgamma,2.054062192196664,0.7624885320266611,12.243157386779785,9F7W; BPA is the real bound ligand (chem component 2OH), 0.58 occupancy in this crystal structure

@@ -15,3 +15,4 @@ DrugCLIP/tsb_dir/
 bpa_panel/*.lmdb-lock
 UniMolDockingV2/unimol_docking_v2/interface/checkpoint_best.pt
 UniMolDockingV2/unimol_docking_v2/interface/predict_sdf/
+__pycache__/
