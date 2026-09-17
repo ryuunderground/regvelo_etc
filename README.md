@@ -2,10 +2,6 @@
 
 DrugCLIP(단백질 포켓-화합물 대조학습 기반 초고속 가상 스크리닝 모델, Science 2026)을 로컬(CPU, Apple Silicon)에서 돌려서, 비스페놀A(BPA)와 그 유사체들이 어떤 핵수용체에 얼마나 잘 붙는지 스크리닝하고, 실제 문헌/결정구조와 대조 검증한 기록입니다. 아래는 처음부터 지금까지 실제로 한 작업을 순서대로 정리한 것입니다.
 
-## 왜 이걸 하는가
-
-BPA는 잘 알려진 내분비교란물질(EDC)입니다. "BPA가 어떤 리셉터에 잘 붙는가"와 "BPA 유사체(대체 화학물질로 쓰이는 BPS, BPF 등)도 마찬가지로 위험한가"를 계산적으로 스크리닝하고, 그 결과가 실제 생물학/문헌과 맞는지를 단계마다 의심하고 검증하면서 진행했습니다.
-
 ---
 
 ## 1단계 — DrugCLIP 환경 구축 (CPU, uv)
@@ -34,7 +30,7 @@ BPA는 잘 알려진 내분비교란물질(EDC)입니다. "BPA가 어떤 리셉�
 
 **중요**: 여기서부터는 기존 DrugCLIP 체크포인트를 **그대로 쓰는 조회(zero-shot)** 이지, 재학습이 아닙니다. 화합물 2~3개로 파인튜닝하면 통계적으로 의미가 없다는 게 이 프로젝트 초반에 나온 핵심 결론이라, 계속 이 원칙을 지켰습니다.
 
-- **화합물 11개** (`bpa_panel/compounds.csv`): BPA + BPS, BPF, BPAF, BPB, BPE, BPZ, BPC, BPAP, TBBPA, TCBPA. SMILES는 전부 PubChem API에서 직접 조회해서 검증 (기억에 의존 안 함)
+- **화합물 11개** (`bpa_panel/compounds.csv`): BPA + BPS, BPF, BPAF, BPB, BPE, BPZ, BPC, BPAP, TBBPA, TCBPA. SMILES는 전부 PubChem API에서 직접 조회해서 검증
   - 주의사항 하나 발견: PubChem이 "Bisphenol C"라고 부르는 화합물(CID 6620)은 독성학 문헌이 실제로 말하는 BPC(다른 구조)와 다른 화합물이었음 — CSV에 명시
 - **리셉터 7개** (`bpa_panel/receptors.csv`): ERalpha, ERbeta, ERRgamma, PPARgamma, AR, THRbeta, PR — 문헌상 BPA 타깃으로 보고된 핵수용체들. 전부 **실제 PDB 결정구조**(AlphaFold 아님) 사용, 각각 출처 논문/PDB ID 기재
 - `build_pockets.py`: 실제 PDB 다운로드 후 포켓 추출 (참조리간드 6Å 이내 잔기, 원본 저장소의 `write_dude_multi.py` 로직 재사용)
@@ -52,8 +48,6 @@ ERalpha에서 BPA보다 점수가 높게 나온 화합물 4개(BPZ, BPB, BPC, TC
 | BPB | ✅ 확인됨 (15개 연구 리뷰 + 직접비교) |
 | BPC | ⚠️ **검증 불가** — 우리가 스크리닝한 화합물이 문헌이 말하는 "진짜 BPC"와 다른 구조였음 |
 | TCBPA | 🟡 문헌 엇갈림 — 모델 예측을 뒷받침 못함 |
-
-모델 예측을 맹신하면 안 되고, 특히 이름이 중의적인 화합물은 구조 identity부터 재확인해야 한다는 교훈.
 
 ## 5단계 — "친구들만 비교한 거 아니냐" 재검증
 
