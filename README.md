@@ -115,8 +115,18 @@ drugclip/
 3. `DrugCLIP/checkpoint_best.pt`는 [원본 레포 Google Drive](https://github.com/THU-ATOM/DrugCLIP)에서 받아야 함 (용량 문제로 이 레포엔 커밋 안 함)
 4. `bpa_panel/`, `bpa_panel/docking/`의 각 `build_*.py` 스크립트를 순서대로 실행하면 전체 파이프라인 재현 가능
 
+## 8단계 — `score_matrix.csv` 포켓 풀링 버그 수정 (`build_pockets.py`)
+
+DESIGN.md 작업 중 BPA를 positive/hard-negative로 분류하다가, **PPARγ가 실제 결정구조(9F7W)까지 있는데도 DrugCLIP 점수가 0.0148(거의 0)로 나오는 게 이상해서** 원인을 확인함.
+
+- 원인: 7단계에서 도킹 쪽(`build_docking_inputs.py`)만 고치고 방치했던 "리간드 여러 카피 풀링" 버그가 `build_pockets.py`(스크리닝 점수용 포켓 추출)에는 그대로 남아있었음. 9F7W는 참조리간드(BPA) 카피가 2개라, 풀링하면 두 결합부위가 합쳐진 700원자짜리 뒤죽박죽 포켓이 만들어짐.
+- 같은 방식(첫 번째 인스턴스만 사용)으로 수정 후 재추출: PPARγ 포켓 700→422원자, ERalpha 380→186원자, PR 474→240원자 (ERbeta/ERRgamma/AR/THRbeta는 원래 카피가 1개라 변화 없음 — 이 4개 리셉터의 BPA 점수가 수정 전후로 정확히 동일하다는 게 그 자체로 좋은 sanity check가 됨)
+- **결과**: PPARγ BPA 점수 0.0148 → **0.5381**로 급등. "모델이 진짜 결합을 놓친 것"이 아니라 **우리 쪽 포켓 추출 버그가 원인**이었음이 확인됨. ERalpha(0.5711→0.8440), PR(0.3497→0.5523)도 크게 변함.
+- ERalpha 순위도 바뀜: TCBPA가 4위(BPA보다 위)에서 8위(BPA보다 아래)로 떨어져서, "BPA보다 순위 높은 화합물"은 더 이상 4개가 아니라 3개(BPC, BPB, BPZ)임. 4단계 문헌 검증 결과(`eralpha_literature_check.csv`)는 이 3개에 대해서는 그대로 유효, TCBPA 항목은 "더 이상 BPA를 안 앞선다"는 내용으로 갱신함.
+- **AR(0.5887, 변화 없음)이 여전히 ERalpha(0.8440)보다 낮아졌으므로**, "AR이 ERalpha보다 높게 나온다"는 이전 false-positive 관찰은 이번 수정으로 사라짐 — 재확인 필요 (DESIGN.md 갱신 예정)
+
 ## 알려진 한계 / 다음에 할 일
 
-- `build_pockets.py`(3단계, `score_matrix.csv`용 포켓 추출)에는 7단계에서 발견한 "리간드 여러 카피 풀링" 버그가 아직 남아있음 (ERalpha/PPARgamma/PR 3개 리셉터) — 도킹 쪽(`build_docking_inputs.py`)은 고쳤지만 스크리닝 점수 쪽은 재작업 안 함
+- 5단계(넓은 라이브러리 재랭킹, `library_ranking.csv`)는 **수정 전 ERalpha 포켓**으로 계산된 결과라 지금은 stale함 — BPA가 20,001개 중 3위였다는 결과를 재확인하려면 고친 포켓으로 다시 돌려야 함
 - BPS/BPAF/BPZ의 포즈 정확도는 대칭성 문제로 자체 확신도만으로는 판단 불가하고, 이 3개는 결정구조가 없어서 직접 검증도 못 함 — BPA와 같은 계열이라 마찬가지로 정확할 것이라는 추론만 가능
-- "구조와 결합력을 동시에 보는 모델 하나"를 원한다면, DrugCLIP을 파인튜닝하는 게 아니라 포즈를 입력받아 재채점하는 별도의 pose-aware scoring 모델(GNINA, RTMScore 계열)을 3번째 단계로 추가하는 게 다음 방향으로 논의됨 (아직 미착수)
+- "구조와 결합력을 동시에 보는 모델 하나"를 원한다면, DrugCLIP을 파인튜닝하는 게 아니라 포즈를 입력받아 재채점하는 별도의 pose-aware scoring 모델(IGModel 등, DESIGN.md 참고)을 3번째 단계로 추가하는 게 다음 방향 — DESIGN.md에 설계는 돼 있으나 아직 미착수

@@ -1,6 +1,15 @@
-"""Add literature-verification columns to results_ranked.csv for the 4
+"""Add literature-verification columns to results_ranked.csv for the
 compounds that scored above BPA for ERalpha, based on parallel literature
-research (see eralpha_literature_check.csv for full detail/citations)."""
+research (see eralpha_literature_check.csv for full detail/citations).
+
+NOTE: this was originally run against the pre-pocket-fix ERalpha ranking,
+where 4 compounds outranked BPA (BPZ, BPB, BPC, TCBPA). After fixing the
+multi-ligand-copy pocket-pooling bug (see build_pockets.py / README "알려진
+한계"), ERalpha's ranking changed and only 3 compounds now outrank BPA
+(BPC, BPB, BPZ) -- TCBPA dropped below BPA (rank 8 of 11, was rank 4 of 11).
+Keeping TCBPA's literature verdict here since it's still useful evidence
+about TCBPA itself, but it's no longer "a compound the model ranks above
+BPA" -- see the note field."""
 import csv
 
 VERDICTS = {
@@ -22,10 +31,13 @@ VERDICTS = {
         "(CAS 14868-03-2, dichloro-vinylidene bridge). Score not validated either way.",
     ),
     ("ERalpha", "TCBPA"): (
-        "MIXED",
+        "MIXED_AND_NO_LONGER_OUTRANKS_BPA",
         "Riu 2011 Toxicol Sci: EC50 TCBPA 0.53uM vs BPA 0.29uM (comparable, BPA "
         "slightly more potent). Pelch 2019: TCBPA only 21.3% max efficacy vs E2 "
-        "(near-inactive). Two studies disagree; does not confirm TCBPA > BPA.",
+        "(near-inactive). Two studies disagree; did not confirm TCBPA > BPA even "
+        "before the pocket fix. After the fix, TCBPA dropped from rank 4/11 to "
+        "rank 8/11 -- it no longer outranks BPA at all, consistent with the "
+        "literature not supporting TCBPA > BPA in the first place.",
     ),
 }
 

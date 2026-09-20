@@ -35,6 +35,18 @@ def extract_pocket(pdb_path, ligand_code, radius=RADIUS):
     if len(ligand) == 0:
         raise ValueError(f"ligand {ligand_code} not found in {pdb_path}")
 
+    # ponytail-fix: some entries have multiple copies of the reference ligand
+    # (different chains/asymmetric-unit copies). Pooling them spans multiple
+    # distinct binding sites into one nonsensical oversized pocket. Keep just
+    # the first (chain_id, residue_number) instance (same fix already applied
+    # in docking/build_docking_inputs.py).
+    ligand = ligand[ligand["element_symbol"] != "H"]
+    first_instance = ligand[["chain_id", "residue_number"]].iloc[0]
+    ligand = ligand[
+        (ligand["chain_id"] == first_instance["chain_id"])
+        & (ligand["residue_number"] == first_instance["residue_number"])
+    ]
+
     protein_coord = protein[["x_coord", "y_coord", "z_coord"]].to_numpy()
     ligand_coord = ligand[["x_coord", "y_coord", "z_coord"]].to_numpy()
 
