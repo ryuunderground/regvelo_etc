@@ -130,7 +130,7 @@ Tox21은 리셉터마다 다른 화합물 세트가 아니라 **거의 같은 ~1
 ## MVP 순서
 
 1. ~~Tox21/ToxCast에서 이 리셉터 패밀리 관련 실측 데이터 규모 확인~~ **완료** — ERα/AR/PPARγ 각 9천~1만 건, 9/11(297건) 대비 충분한 규모 확인. BPA류 11개 화합물의 실제 CID·결과도 확인, 제외 리스트 확정.
-2. ChEMBL + Tox21 합쳐서 hard-negative 파인튜닝 데이터셋 구축 (**위 11개 BPA/비스페놀류 CID는 전부 제외** — BPA는 최종 validation 전용으로 남겨둠)
+2. ~~ChEMBL + Tox21 합쳐서 hard-negative 파인튜닝 데이터셋 구축~~ **1차 완료** (`edc_finetune_data/`) — Tox21 5개 리셉터(ERα, AR, PPARγ, PR, THRβ) 실측 assay를 merge, "다른 리셉터엔 active인데 여기는 inactive" 조건으로 hard-negative pair 구성. **5,164 pairs (positive 2,190 / hard_negative 2,974), 화합물 1,555개** — 11개 BPA류 CID는 전부 제외 확인. ChEMBL 병합·ERβ/ERRγ 보강·SMILES+컨포머 생성은 다음 단계
 3. DrugCLIP hard-negative 파인튜닝 (9/11 방식을 도메인 전체로 확장)
 4. 도메인 내 held-out 리셉터 평가 + 완전 unseen 리셉터 평가를 분리해서 보고
 5. BPA 패널 재실행, 파인튜닝 전/후 비교
