@@ -541,7 +541,7 @@ class IBSLoss(CrossEntropyLoss):
         logit_output = net_output[0]
         loss = self.compute_loss(model, logit_output, sample, reduce=reduce)
         sample_size = logit_output.size(0)
-        targets = torch.arange(sample_size, dtype=torch.long).cuda()
+        targets = torch.arange(sample_size, dtype=torch.long, device=logit_output.device)
         affinities = sample["target"]["finetune_target"].view(-1)
         if not self.training:
             logit_output = logit_output[:,:sample_size]
@@ -571,7 +571,7 @@ class IBSLoss(CrossEntropyLoss):
         lprobs_pocket = F.log_softmax(net_output.float(), dim=-1)
         lprobs_pocket = lprobs_pocket.view(-1, lprobs_pocket.size(-1))
         sample_size = lprobs_pocket.size(0)
-        targets= torch.arange(sample_size, dtype=torch.long).view(-1).cuda()
+        targets = torch.arange(sample_size, dtype=torch.long, device=lprobs_pocket.device).view(-1)
 
         # pocket retrieve mol
         loss_pocket = F.nll_loss(

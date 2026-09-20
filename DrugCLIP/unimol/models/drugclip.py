@@ -179,20 +179,23 @@ class BindingAffinityModel(BaseUnicoreModel):
         matrix2 = np.repeat(np.transpose(pockets), len(pockets), 0)
         pocket_duplicate_matrix = matrix1==matrix2
         pocket_duplicate_matrix = 1*pocket_duplicate_matrix
-        pocket_duplicate_matrix = torch.tensor(pocket_duplicate_matrix, dtype=ba_predict.dtype).cuda()
-        
+        # ponytail: hardcoded .cuda() crashes on CPU-only machines (training
+        # path only, inference bypasses forward()); move to whatever device
+        # the model's own tensors are already on instead.
+        pocket_duplicate_matrix = torch.tensor(pocket_duplicate_matrix, dtype=ba_predict.dtype).to(ba_predict.device)
+
         mols = np.array(smi_list, dtype=str)
         mols = np.expand_dims(mols, 1)
         matrix1 = np.repeat(mols, len(mols), 1)
         matrix2 = np.repeat(np.transpose(mols), len(mols), 0)
         mol_duplicate_matrix = matrix1==matrix2
         mol_duplicate_matrix = 1*mol_duplicate_matrix
-        mol_duplicate_matrix = torch.tensor(mol_duplicate_matrix, dtype=ba_predict.dtype).cuda()
+        mol_duplicate_matrix = torch.tensor(mol_duplicate_matrix, dtype=ba_predict.dtype).to(ba_predict.device)
 
-        
-        
 
-        onehot_labels = torch.eye(bsz).cuda()
+
+
+        onehot_labels = torch.eye(bsz).to(ba_predict.device)
         indicater_matrix = pocket_duplicate_matrix + mol_duplicate_matrix - 2*onehot_labels
         
         #print(ba_predict.shape)
