@@ -56,6 +56,22 @@ BPA 전용 모델을 새로 학습시키는 대신, 기존에 검증된 모델�
 
 **Hard negative 구성**: 같은 리셉터 패밀리 내 다른 specificity를 서로의 negative로 사용 (ERα-ERβ-ERRγ 서로, AR-PR-GR 서로 등).
 
+**실제 사례로 확인된 문제 (BPA, 기존 7개 리셉터 패널 기준)**:
+
+| 리셉터 | DrugCLIP 점수 | 분류 | 문제 |
+|---|---|---|---|
+| ERα | 0.5711 | positive (Delfosse 2012, 결정구조 3UU7) | — |
+| ERRγ | 0.8267 | positive (Matsushima 2007, Kd=5.5nM) | — |
+| ERβ | 0.4183 | positive (Delfosse 2012) | — |
+| **AR** | **0.5887** | hard negative (직접결합 결정구조 없음, DHT 구조 대리) | **False positive** — 진짜 타깃 ERα(0.5711)보다도 높게 나옴 |
+| THRβ | 0.3707 | hard negative (간접 기전만 보고) | — |
+| PR | 0.3497 | hard negative (유도체 BPAF 도킹 연구만 존재) | — |
+| **PPARγ** | **0.0148** | positive (결정구조 9F7W 존재) | **False negative** — 결정구조까지 있는 진짜 양성을 거의 0점으로 놓침 |
+
+두 실패는 원인이 다르다:
+- **AR (false positive)**: 같은 핵수용체 계열 포켓이라 구조적으로 헷갈리는 전형적 사례 — hard-negative 파인튜닝(ERα-AR을 서로의 negative로)이 직접 겨냥하는 문제.
+- **PPARγ (false negative)**: "헷갈려서"가 아니라 아예 못 알아보는 문제라서 hard-negative 학습으로는 안 고쳐질 수 있음. **파인튜닝을 벌이기 전에, 9F7W가 README "알려진 한계"에 적힌 리간드-다중카피 풀링 버그의 영향을 받는 3개 리셉터 중 하나라는 점부터 확인해야 함** — 모델이 아니라 우리 쪽 포켓 추출이 잘못됐을 가능성을 먼저 배제.
+
 **목표 규모**: 9/11의 337건보다 최소 한 자릿수 이상. Tox21 ERα assay 하나만 해도 화합물 수천 개 규모로 알려져 있어 가능성 있음 — 실제로 당겨봐야 정확한 숫자 확인 가능.
 
 ## 2. 포즈 (Uni-Mol Docking V2, 변경 없음)
