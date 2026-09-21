@@ -1,0 +1,21 @@
+{
+  "target": "AR",
+  "returncode": 0,
+  "normal_engine_completion": true,
+  "elapsed_seconds": 176.22991943359375,
+  "scratch_directory": "/tmp/bpa_flexible_five_AR_phbfc0ws",
+  "input_sha256": "58da74e06702d24ec72cfaf33313d3afc152339de47f705daf34421dfc917170",
+  "grid_sha256": "c2d3974e39448680d1e488565b593fd403b68b5fa2361ddec9fe68b51d7b43c4",
+  "configuration_sha256": "a3223332fcb16d159cb6cef842fe86abf248f9dab621b316b768565c9af3b5b5",
+  "pose_file": "/bigkim_home/CaptainDo/BPA_derivate_receptor/benchmark_db/bpa_pose_embedding_alignment_20260913/flexible_five_v1/docking/AR/flexible_sp_lib.maegz",
+  "pose_sha256": "cd0e09f9693df768a80b22789f69b63bab49624f44e66e9c3a6118681cc1246a",
+  "output_sha256": {
+    "flexible_sp.in": "a3223332fcb16d159cb6cef842fe86abf248f9dab621b316b768565c9af3b5b5",
+    "flexible_sp_raw.maegz": "8e7e9cde686567d5ada7ca87bbb798a2c3eba860f8b35c5059d302084b373495",
+    "flexible_sp_lib.maegz": "cd0e09f9693df768a80b22789f69b63bab49624f44e66e9c3a6118681cc1246a",
+    "flexible_sp.csv": "b02cf26e1d2c245b551ec94d35a6bfec3102538338c2295b276f8a70d51bb00b",
+    "flexible_sp_skip.csv": "c2ae5cc1188d2db9a29edca09ff81fb9be88c9c06b80ec4d82d92b34a823b6e6",
+    "stdout.log": "a811f047f8cdfcde09fa0fc440cc94f376a529e1200cbaf9643f3278d0af73fc"
+  },
+  "status": "COMPLETED_REQUIRES_POSE_QC"
+}

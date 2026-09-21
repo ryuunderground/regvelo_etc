@@ -1,0 +1,878 @@
+Glide version 112122 (mmshare version 75122)
+mmshare         3c814ba779+diff
+glide-src       937476429a
+psp-src         1cdf5e5637
+macromodel-src  c2983c3617
+epik-src        492c99c9e8
+
+Copyright (c) Schrodinger, LLC.
+All Rights Reserved.
+
+Running the optimized Glide.
+
+== Input settings ==
+
+COMPRESS_POSES   True
+DOCKING_METHOD   confgen
+EPIK_PENALTIES   True
+GRIDFILE   /tmp/bpa_flexible_five_ESR1_c_b95cvm/grid.zip
+KEEPRAW   True
+LIG_CCUT   0.15
+LIG_VSCALE   0.8
+LIGANDFILE   /tmp/bpa_flexible_five_ESR1_c_b95cvm/inputs.maegz
+MAXKEEP   5000
+MAXREF   400
+NENHANCED_SAMPLING   2
+NREPORT   0
+POSE_OUTTYPE   ligandlib
+POSES_PER_LIG   20
+POSTDOCK   True
+POSTDOCK_NPOSE   50
+PRECISION   SP
+REPORT_CPU_TIME   True
+WRITE_CSV   True
+
+== Grid info ==
+
+Receptor atoms: 3884
+Sites: 125
+Rough grid cells: (30, 30, 30)
+Fine grid cells: (80, 80, 80)
+Adaptive grid points: 301585
+Movable atoms: 0
+Excluded volumes: 0
+Peptide mode: false
+
+
+
+== Begin ligand loop ==
+
+LIG 1 (BPA_CID2286__prepared_state_000): -5.496 kcal/mol (-5.5 gscore + 0.0 epik); 5.26 s
+                                       : -5.127 kcal/mol (-5.13 gscore + 0.0 epik); 5.26 s
+                                       : -4.886 kcal/mol (-4.89 gscore + 0.0 epik); 5.26 s
+                                       : -0.997 kcal/mol (-0.997 gscore + 0.0 epik); 5.26 s
+                                       : -0.956 kcal/mol (-0.956 gscore + 0.0 epik); 5.26 s
+                                       : -4.305 kcal/mol (-4.3 gscore + 0.0 epik); 5.26 s
+                                       : -0.461 kcal/mol (-0.461 gscore + 0.0 epik); 5.26 s
+                                       : -5.377 kcal/mol (-5.38 gscore + 0.0 epik); 5.26 s
+                                       : -4.236 kcal/mol (-4.24 gscore + 0.0 epik); 5.26 s
+                                       : -3.620 kcal/mol (-3.62 gscore + 0.0 epik); 5.26 s
+                                       : -4.619 kcal/mol (-4.62 gscore + 0.0 epik); 5.26 s
+                                       : -2.552 kcal/mol (-2.55 gscore + 0.0 epik); 5.26 s
+LIG 2 (BPA_CID2286__prepared_state_001): -5.653 kcal/mol (-5.65 gscore + 0.0 epik); 5.05 s
+                                       : -5.189 kcal/mol (-5.19 gscore + 0.0 epik); 5.05 s
+                                       : -5.751 kcal/mol (-5.75 gscore + 0.0 epik); 5.05 s
+                                       : -1.085 kcal/mol (-1.09 gscore + 0.0 epik); 5.05 s
+                                       : -3.213 kcal/mol (-3.21 gscore + 0.0 epik); 5.05 s
+                                       : -1.076 kcal/mol (-1.08 gscore + 0.0 epik); 5.05 s
+                                       : -0.374 kcal/mol (-0.374 gscore + 0.0 epik); 5.05 s
+                                       : -0.782 kcal/mol (-0.782 gscore + 0.0 epik); 5.05 s
+                                       : -1.369 kcal/mol (-1.37 gscore + 0.0 epik); 5.05 s
+                                       : -3.097 kcal/mol (-3.1 gscore + 0.0 epik); 5.05 s
+                                       : -1.365 kcal/mol (-1.36 gscore + 0.0 epik); 5.05 s
+                                       : -5.305 kcal/mol (-5.3 gscore + 0.0 epik); 5.05 s
+                                       : -3.723 kcal/mol (-3.72 gscore + 0.0 epik); 5.05 s
+                                       : -0.652 kcal/mol (-0.652 gscore + 0.0 epik); 5.05 s
+                                       : -0.467 kcal/mol (-0.467 gscore + 0.0 epik); 5.05 s
+                                       : -0.585 kcal/mol (-0.585 gscore + 0.0 epik); 5.05 s
+                                       : -0.641 kcal/mol (-0.641 gscore + 0.0 epik); 5.05 s
+                                       : -0.509 kcal/mol (-0.509 gscore + 0.0 epik); 5.05 s
+                                       : -4.612 kcal/mol (-4.61 gscore + 0.0 epik); 5.05 s
+                                       : -2.262 kcal/mol (-2.26 gscore + 0.0 epik); 5.05 s
+The ligand had one or more atoms outside the grid box during energy evaluation or minimization.
+LIG 3 (BPA_CID2286__prepared_state_002): -4.861 kcal/mol (-4.86 gscore + 0.0 epik); 5.23 s
+                                       : -7.238 kcal/mol (-7.24 gscore + 0.0 epik); 5.23 s
+                                       : -6.603 kcal/mol (-6.6 gscore + 0.0 epik); 5.23 s
+                                       : -4.679 kcal/mol (-4.68 gscore + 0.0 epik); 5.23 s
+                                       : -5.892 kcal/mol (-5.89 gscore + 0.0 epik); 5.23 s
+                                       : -1.905 kcal/mol (-1.9 gscore + 0.0 epik); 5.23 s
+                                       : -2.107 kcal/mol (-2.11 gscore + 0.0 epik); 5.23 s
+                                       : -4.562 kcal/mol (-4.56 gscore + 0.0 epik); 5.23 s
+                                       : -3.521 kcal/mol (-3.52 gscore + 0.0 epik); 5.23 s
+                                       : -2.157 kcal/mol (-2.16 gscore + 0.0 epik); 5.23 s
+                                       : -6.305 kcal/mol (-6.3 gscore + 0.0 epik); 5.23 s
+                                       : -4.808 kcal/mol (-4.81 gscore + 0.0 epik); 5.23 s
+                                       : -6.351 kcal/mol (-6.35 gscore + 0.0 epik); 5.23 s
+                                       : -4.283 kcal/mol (-4.28 gscore + 0.0 epik); 5.23 s
+                                       : -3.491 kcal/mol (-3.49 gscore + 0.0 epik); 5.23 s
+LIG 4 (BPA_CID6618__prepared_state_003): -2.033 kcal/mol (-2.28 gscore + 0.248 epik); 0.59 s
+                                       : -1.902 kcal/mol (-2.15 gscore + 0.248 epik); 0.59 s
+                                       : -1.672 kcal/mol (-1.92 gscore + 0.248 epik); 0.59 s
+                                       : -1.338 kcal/mol (-1.59 gscore + 0.248 epik); 0.59 s
+                                       : -0.943 kcal/mol (-1.19 gscore + 0.248 epik); 0.59 s
+                                       : -0.079 kcal/mol (-0.327 gscore + 0.248 epik); 0.59 s
+                                       : -0.333 kcal/mol (-0.58 gscore + 0.248 epik); 0.59 s
+                                       : -0.113 kcal/mol (-0.361 gscore + 0.248 epik); 0.59 s
+                                       : -0.308 kcal/mol (-0.556 gscore + 0.248 epik); 0.59 s
+LIG 5 (BPA_CID6618__prepared_state_004): -1.578 kcal/mol (-2.4 gscore + 0.825 epik); 0.83 s
+                                       : -1.856 kcal/mol (-2.68 gscore + 0.825 epik); 0.83 s
+                                       : -1.744 kcal/mol (-2.57 gscore + 0.825 epik); 0.83 s
+                                       : -0.717 kcal/mol (-1.54 gscore + 0.825 epik); 0.83 s
+                                       : -0.641 kcal/mol (-1.47 gscore + 0.825 epik); 0.83 s
+                                       : 0.089 kcal/mol (-0.736 gscore + 0.825 epik); 0.83 s
+                                       : 0.515 kcal/mol (-0.31 gscore + 0.825 epik); 0.83 s
+LIG 6 (BPA_CID6619__prepared_state_005): -7.035 kcal/mol (-7.21 gscore + 0.174 epik); 0.89 s
+                                       : -7.019 kcal/mol (-7.19 gscore + 0.174 epik); 0.89 s
+                                       : -5.887 kcal/mol (-6.06 gscore + 0.174 epik); 0.89 s
+                                       : -2.101 kcal/mol (-2.27 gscore + 0.174 epik); 0.89 s
+                                       : -2.346 kcal/mol (-2.52 gscore + 0.174 epik); 0.89 s
+                                       : -1.697 kcal/mol (-1.87 gscore + 0.174 epik); 0.89 s
+                                       : -5.375 kcal/mol (-5.55 gscore + 0.174 epik); 0.89 s
+                                       : -1.182 kcal/mol (-1.36 gscore + 0.174 epik); 0.89 s
+                                       : -1.155 kcal/mol (-1.33 gscore + 0.174 epik); 0.89 s
+                                       : -1.076 kcal/mol (-1.25 gscore + 0.174 epik); 0.89 s
+                                       : -0.922 kcal/mol (-1.1 gscore + 0.174 epik); 0.89 s
+                                       : -0.877 kcal/mol (-1.05 gscore + 0.174 epik); 0.89 s
+                                       : -1.131 kcal/mol (-1.3 gscore + 0.174 epik); 0.89 s
+LIG 7 (BPA_CID6619__prepared_state_006): -7.221 kcal/mol (-8.17 gscore + 0.953 epik); 1.09 s
+                                       : -2.803 kcal/mol (-3.76 gscore + 0.953 epik); 1.09 s
+                                       : -2.786 kcal/mol (-3.74 gscore + 0.953 epik); 1.09 s
+                                       : -1.911 kcal/mol (-2.86 gscore + 0.953 epik); 1.09 s
+                                       : -5.550 kcal/mol (-6.5 gscore + 0.953 epik); 1.09 s
+                                       : -1.190 kcal/mol (-2.14 gscore + 0.953 epik); 1.09 s
+                                       : -5.492 kcal/mol (-6.44 gscore + 0.953 epik); 1.09 s
+                                       : -1.321 kcal/mol (-2.27 gscore + 0.953 epik); 1.09 s
+                                       : -0.685 kcal/mol (-1.64 gscore + 0.953 epik); 1.09 s
+                                       : -0.513 kcal/mol (-1.47 gscore + 0.953 epik); 1.09 s
+                                       : -1.055 kcal/mol (-2.01 gscore + 0.953 epik); 1.09 s
+                                       : -0.701 kcal/mol (-1.65 gscore + 0.953 epik); 1.09 s
+                                       : -5.520 kcal/mol (-6.47 gscore + 0.953 epik); 1.09 s
+LIG 8 (BPA_CID6620__prepared_state_007): -8.874 kcal/mol (-8.87 gscore + 0.000671 epik); 3.44 s
+                                       : -8.629 kcal/mol (-8.63 gscore + 0.000671 epik); 3.44 s
+                                       : -8.643 kcal/mol (-8.64 gscore + 0.000671 epik); 3.44 s
+                                       : -8.984 kcal/mol (-8.98 gscore + 0.000671 epik); 3.44 s
+                                       : -8.678 kcal/mol (-8.68 gscore + 0.000671 epik); 3.44 s
+                                       : -8.231 kcal/mol (-8.23 gscore + 0.000671 epik); 3.44 s
+                                       : -8.210 kcal/mol (-8.21 gscore + 0.000671 epik); 3.44 s
+                                       : -8.320 kcal/mol (-8.32 gscore + 0.000671 epik); 3.44 s
+                                       : -8.018 kcal/mol (-8.02 gscore + 0.000671 epik); 3.44 s
+                                       : -8.537 kcal/mol (-8.54 gscore + 0.000671 epik); 3.44 s
+                                       : -7.950 kcal/mol (-7.95 gscore + 0.000671 epik); 3.44 s
+                                       : -8.272 kcal/mol (-8.27 gscore + 0.000671 epik); 3.44 s
+                                       : -8.206 kcal/mol (-8.21 gscore + 0.000671 epik); 3.44 s
+                                       : -8.480 kcal/mol (-8.48 gscore + 0.000671 epik); 3.44 s
+                                       : -7.813 kcal/mol (-7.81 gscore + 0.000671 epik); 3.44 s
+                                       : -8.317 kcal/mol (-8.32 gscore + 0.000671 epik); 3.44 s
+                                       : -8.353 kcal/mol (-8.35 gscore + 0.000671 epik); 3.44 s
+                                       : -8.510 kcal/mol (-8.51 gscore + 0.000671 epik); 3.44 s
+                                       : -7.752 kcal/mol (-7.75 gscore + 0.000671 epik); 3.44 s
+                                       : -8.426 kcal/mol (-8.43 gscore + 0.000671 epik); 3.44 s
+LIG 9 (BPA_CID6623__prepared_state_008): -8.414 kcal/mol (-8.42 gscore + 0.00189 epik); 3.20 s
+                                       : -8.409 kcal/mol (-8.41 gscore + 0.00189 epik); 3.20 s
+                                       : -8.369 kcal/mol (-8.37 gscore + 0.00189 epik); 3.20 s
+                                       : -8.455 kcal/mol (-8.46 gscore + 0.00189 epik); 3.20 s
+                                       : -8.477 kcal/mol (-8.48 gscore + 0.00189 epik); 3.20 s
+                                       : -8.558 kcal/mol (-8.56 gscore + 0.00189 epik); 3.20 s
+                                       : -9.012 kcal/mol (-9.01 gscore + 0.00189 epik); 3.20 s
+                                       : -8.167 kcal/mol (-8.17 gscore + 0.00189 epik); 3.20 s
+                                       : -8.174 kcal/mol (-8.18 gscore + 0.00189 epik); 3.20 s
+                                       : -8.187 kcal/mol (-8.19 gscore + 0.00189 epik); 3.20 s
+                                       : -8.116 kcal/mol (-8.12 gscore + 0.00189 epik); 3.20 s
+                                       : -7.449 kcal/mol (-7.45 gscore + 0.00189 epik); 3.20 s
+                                       : -7.759 kcal/mol (-7.76 gscore + 0.00189 epik); 3.20 s
+                                       : -7.691 kcal/mol (-7.69 gscore + 0.00189 epik); 3.20 s
+                                       : -7.754 kcal/mol (-7.76 gscore + 0.00189 epik); 3.20 s
+                                       : -7.722 kcal/mol (-7.72 gscore + 0.00189 epik); 3.20 s
+                                       : -7.411 kcal/mol (-7.41 gscore + 0.00189 epik); 3.20 s
+                                       : -7.914 kcal/mol (-7.92 gscore + 0.00189 epik); 3.20 s
+                                       : -7.777 kcal/mol (-7.78 gscore + 0.00189 epik); 3.20 s
+                                       : -7.703 kcal/mol (-7.7 gscore + 0.00189 epik); 3.20 s
+LIG 10 (BPA_CID6626__prepared_state_009): -8.163 kcal/mol (-8.39 gscore + 0.229 epik); 2.65 s
+                                        : -8.169 kcal/mol (-8.4 gscore + 0.229 epik); 2.65 s
+                                        : -8.144 kcal/mol (-8.37 gscore + 0.229 epik); 2.65 s
+                                        : -8.170 kcal/mol (-8.4 gscore + 0.229 epik); 2.65 s
+                                        : -7.899 kcal/mol (-8.13 gscore + 0.229 epik); 2.65 s
+                                        : -7.908 kcal/mol (-8.14 gscore + 0.229 epik); 2.65 s
+                                        : -7.809 kcal/mol (-8.04 gscore + 0.229 epik); 2.65 s
+                                        : -7.434 kcal/mol (-7.66 gscore + 0.229 epik); 2.65 s
+                                        : -7.398 kcal/mol (-7.63 gscore + 0.229 epik); 2.65 s
+                                        : -8.220 kcal/mol (-8.45 gscore + 0.229 epik); 2.65 s
+                                        : -8.123 kcal/mol (-8.35 gscore + 0.229 epik); 2.65 s
+                                        : -7.963 kcal/mol (-8.19 gscore + 0.229 epik); 2.65 s
+                                        : -7.189 kcal/mol (-7.42 gscore + 0.229 epik); 2.65 s
+                                        : -7.381 kcal/mol (-7.61 gscore + 0.229 epik); 2.65 s
+                                        : -7.413 kcal/mol (-7.64 gscore + 0.229 epik); 2.65 s
+                                        : -7.273 kcal/mol (-7.5 gscore + 0.229 epik); 2.65 s
+                                        : -7.204 kcal/mol (-7.43 gscore + 0.229 epik); 2.65 s
+                                        : -7.320 kcal/mol (-7.55 gscore + 0.229 epik); 2.65 s
+                                        : -8.271 kcal/mol (-8.5 gscore + 0.229 epik); 2.65 s
+                                        : -7.057 kcal/mol (-7.29 gscore + 0.229 epik); 2.65 s
+LIG 11 (BPA_CID6626__prepared_state_010): -6.410 kcal/mol (-7.26 gscore + 0.852 epik); 2.16 s
+                                        : -6.481 kcal/mol (-7.33 gscore + 0.852 epik); 2.16 s
+                                        : -6.351 kcal/mol (-7.2 gscore + 0.852 epik); 2.16 s
+                                        : -6.512 kcal/mol (-7.36 gscore + 0.852 epik); 2.16 s
+                                        : -6.281 kcal/mol (-7.13 gscore + 0.852 epik); 2.16 s
+                                        : -6.269 kcal/mol (-7.12 gscore + 0.852 epik); 2.16 s
+                                        : -6.936 kcal/mol (-7.79 gscore + 0.852 epik); 2.16 s
+                                        : -6.924 kcal/mol (-7.78 gscore + 0.852 epik); 2.16 s
+                                        : -6.907 kcal/mol (-7.76 gscore + 0.852 epik); 2.16 s
+                                        : -5.954 kcal/mol (-6.81 gscore + 0.852 epik); 2.16 s
+                                        : -5.750 kcal/mol (-6.6 gscore + 0.852 epik); 2.16 s
+                                        : -5.969 kcal/mol (-6.82 gscore + 0.852 epik); 2.16 s
+                                        : -6.357 kcal/mol (-7.21 gscore + 0.852 epik); 2.16 s
+                                        : -6.669 kcal/mol (-7.52 gscore + 0.852 epik); 2.16 s
+                                        : -6.458 kcal/mol (-7.31 gscore + 0.852 epik); 2.16 s
+                                        : -6.197 kcal/mol (-7.05 gscore + 0.852 epik); 2.16 s
+                                        : -6.246 kcal/mol (-7.1 gscore + 0.852 epik); 2.16 s
+                                        : -6.548 kcal/mol (-7.4 gscore + 0.852 epik); 2.16 s
+                                        : -6.423 kcal/mol (-7.28 gscore + 0.852 epik); 2.16 s
+                                        : -6.327 kcal/mol (-7.18 gscore + 0.852 epik); 2.16 s
+LIG 12 (BPA_CID7180__prepared_state_011): -8.034 kcal/mol (-8.12 gscore + 0.091 epik); 2.67 s
+                                        : -7.853 kcal/mol (-7.94 gscore + 0.091 epik); 2.67 s
+                                        : -7.910 kcal/mol (-8.0 gscore + 0.091 epik); 2.67 s
+                                        : -7.932 kcal/mol (-8.02 gscore + 0.091 epik); 2.67 s
+                                        : -7.954 kcal/mol (-8.04 gscore + 0.091 epik); 2.67 s
+                                        : -7.874 kcal/mol (-7.96 gscore + 0.091 epik); 2.67 s
+                                        : -7.639 kcal/mol (-7.73 gscore + 0.091 epik); 2.67 s
+                                        : -7.506 kcal/mol (-7.6 gscore + 0.091 epik); 2.67 s
+                                        : -7.706 kcal/mol (-7.8 gscore + 0.091 epik); 2.67 s
+                                        : -6.989 kcal/mol (-7.08 gscore + 0.091 epik); 2.67 s
+                                        : -7.060 kcal/mol (-7.15 gscore + 0.091 epik); 2.67 s
+                                        : -7.196 kcal/mol (-7.29 gscore + 0.091 epik); 2.67 s
+                                        : -7.263 kcal/mol (-7.35 gscore + 0.091 epik); 2.67 s
+                                        : -7.961 kcal/mol (-8.05 gscore + 0.091 epik); 2.67 s
+                                        : -7.759 kcal/mol (-7.85 gscore + 0.091 epik); 2.67 s
+                                        : -7.759 kcal/mol (-7.85 gscore + 0.091 epik); 2.67 s
+                                        : -6.693 kcal/mol (-6.78 gscore + 0.091 epik); 2.67 s
+                                        : -7.078 kcal/mol (-7.17 gscore + 0.091 epik); 2.67 s
+                                        : -7.381 kcal/mol (-7.47 gscore + 0.091 epik); 2.67 s
+                                        : -7.272 kcal/mol (-7.36 gscore + 0.091 epik); 2.67 s
+LIG 13 (BPA_CID7180__prepared_state_012): -6.039 kcal/mol (-7.19 gscore + 1.15 epik); 2.39 s
+                                        : -5.751 kcal/mol (-6.91 gscore + 1.15 epik); 2.39 s
+                                        : -5.914 kcal/mol (-7.07 gscore + 1.15 epik); 2.39 s
+                                        : -5.969 kcal/mol (-7.12 gscore + 1.15 epik); 2.39 s
+                                        : -5.971 kcal/mol (-7.13 gscore + 1.15 epik); 2.39 s
+                                        : -5.857 kcal/mol (-7.01 gscore + 1.15 epik); 2.39 s
+                                        : -5.648 kcal/mol (-6.8 gscore + 1.15 epik); 2.39 s
+                                        : -5.752 kcal/mol (-6.91 gscore + 1.15 epik); 2.39 s
+                                        : -5.668 kcal/mol (-6.82 gscore + 1.15 epik); 2.39 s
+                                        : -5.975 kcal/mol (-7.13 gscore + 1.15 epik); 2.39 s
+                                        : -5.972 kcal/mol (-7.13 gscore + 1.15 epik); 2.39 s
+                                        : -5.629 kcal/mol (-6.78 gscore + 1.15 epik); 2.39 s
+                                        : -5.637 kcal/mol (-6.79 gscore + 1.15 epik); 2.39 s
+                                        : -5.349 kcal/mol (-6.5 gscore + 1.15 epik); 2.39 s
+                                        : -5.329 kcal/mol (-6.48 gscore + 1.15 epik); 2.39 s
+                                        : -5.689 kcal/mol (-6.84 gscore + 1.15 epik); 2.39 s
+                                        : -5.459 kcal/mol (-6.61 gscore + 1.15 epik); 2.39 s
+                                        : -5.790 kcal/mol (-6.94 gscore + 1.15 epik); 2.39 s
+                                        : -5.382 kcal/mol (-6.54 gscore + 1.15 epik); 2.39 s
+                                        : -5.169 kcal/mol (-6.32 gscore + 1.15 epik); 2.39 s
+LIG 14 (BPA_CID12111__prepared_state_013): -8.065 kcal/mol (-8.07 gscore + 0.00331 epik); 2.50 s
+                                         : -8.025 kcal/mol (-8.03 gscore + 0.00331 epik); 2.50 s
+                                         : -8.019 kcal/mol (-8.02 gscore + 0.00331 epik); 2.50 s
+                                         : -7.888 kcal/mol (-7.89 gscore + 0.00331 epik); 2.50 s
+                                         : -7.840 kcal/mol (-7.84 gscore + 0.00331 epik); 2.50 s
+                                         : -7.836 kcal/mol (-7.84 gscore + 0.00331 epik); 2.50 s
+                                         : -7.847 kcal/mol (-7.85 gscore + 0.00331 epik); 2.50 s
+                                         : -7.830 kcal/mol (-7.83 gscore + 0.00331 epik); 2.50 s
+                                         : -7.828 kcal/mol (-7.83 gscore + 0.00331 epik); 2.50 s
+                                         : -7.850 kcal/mol (-7.85 gscore + 0.00331 epik); 2.50 s
+                                         : -7.851 kcal/mol (-7.85 gscore + 0.00331 epik); 2.50 s
+                                         : -7.880 kcal/mol (-7.88 gscore + 0.00331 epik); 2.50 s
+                                         : -7.692 kcal/mol (-7.7 gscore + 0.00331 epik); 2.50 s
+                                         : -7.703 kcal/mol (-7.71 gscore + 0.00331 epik); 2.50 s
+                                         : -7.819 kcal/mol (-7.82 gscore + 0.00331 epik); 2.50 s
+                                         : -7.838 kcal/mol (-7.84 gscore + 0.00331 epik); 2.50 s
+                                         : -7.627 kcal/mol (-7.63 gscore + 0.00331 epik); 2.50 s
+                                         : -7.554 kcal/mol (-7.56 gscore + 0.00331 epik); 2.50 s
+                                         : -7.576 kcal/mol (-7.58 gscore + 0.00331 epik); 2.50 s
+                                         : -7.981 kcal/mol (-7.98 gscore + 0.00331 epik); 2.50 s
+LIG 15 (BPA_CID17570__prepared_state_014): -8.424 kcal/mol (-8.44 gscore + 0.0186 epik); 2.41 s
+                                         : -8.218 kcal/mol (-8.24 gscore + 0.0186 epik); 2.41 s
+                                         : -8.221 kcal/mol (-8.24 gscore + 0.0186 epik); 2.41 s
+                                         : -8.071 kcal/mol (-8.09 gscore + 0.0186 epik); 2.41 s
+                                         : -8.096 kcal/mol (-8.11 gscore + 0.0186 epik); 2.41 s
+                                         : -8.190 kcal/mol (-8.21 gscore + 0.0186 epik); 2.41 s
+                                         : -8.082 kcal/mol (-8.1 gscore + 0.0186 epik); 2.41 s
+                                         : -8.038 kcal/mol (-8.06 gscore + 0.0186 epik); 2.41 s
+                                         : -7.971 kcal/mol (-7.99 gscore + 0.0186 epik); 2.41 s
+                                         : -8.268 kcal/mol (-8.29 gscore + 0.0186 epik); 2.41 s
+                                         : -7.891 kcal/mol (-7.91 gscore + 0.0186 epik); 2.41 s
+                                         : -7.897 kcal/mol (-7.92 gscore + 0.0186 epik); 2.41 s
+                                         : -7.921 kcal/mol (-7.94 gscore + 0.0186 epik); 2.41 s
+                                         : -7.898 kcal/mol (-7.92 gscore + 0.0186 epik); 2.41 s
+                                         : -7.864 kcal/mol (-7.88 gscore + 0.0186 epik); 2.41 s
+                                         : -7.889 kcal/mol (-7.91 gscore + 0.0186 epik); 2.41 s
+                                         : -7.800 kcal/mol (-7.82 gscore + 0.0186 epik); 2.41 s
+                                         : -7.791 kcal/mol (-7.81 gscore + 0.0186 epik); 2.41 s
+                                         : -8.075 kcal/mol (-8.09 gscore + 0.0186 epik); 2.41 s
+                                         : -7.866 kcal/mol (-7.89 gscore + 0.0186 epik); 2.41 s
+LIG 16 (BPA_CID66166__prepared_state_015): -8.911 kcal/mol (-8.91 gscore + 0.00189 epik); 3.42 s
+                                         : -8.869 kcal/mol (-8.87 gscore + 0.00189 epik); 3.42 s
+                                         : -8.854 kcal/mol (-8.86 gscore + 0.00189 epik); 3.42 s
+                                         : -8.572 kcal/mol (-8.57 gscore + 0.00189 epik); 3.42 s
+                                         : -8.778 kcal/mol (-8.78 gscore + 0.00189 epik); 3.42 s
+                                         : -8.353 kcal/mol (-8.36 gscore + 0.00189 epik); 3.42 s
+                                         : -8.427 kcal/mol (-8.43 gscore + 0.00189 epik); 3.42 s
+                                         : -8.353 kcal/mol (-8.35 gscore + 0.00189 epik); 3.42 s
+                                         : -7.824 kcal/mol (-7.83 gscore + 0.00189 epik); 3.42 s
+                                         : -8.127 kcal/mol (-8.13 gscore + 0.00189 epik); 3.42 s
+                                         : -8.590 kcal/mol (-8.59 gscore + 0.00189 epik); 3.42 s
+                                         : -7.725 kcal/mol (-7.73 gscore + 0.00189 epik); 3.42 s
+                                         : -8.318 kcal/mol (-8.32 gscore + 0.00189 epik); 3.42 s
+                                         : -7.844 kcal/mol (-7.85 gscore + 0.00189 epik); 3.42 s
+                                         : -7.893 kcal/mol (-7.9 gscore + 0.00189 epik); 3.42 s
+                                         : -7.849 kcal/mol (-7.85 gscore + 0.00189 epik); 3.42 s
+                                         : -7.690 kcal/mol (-7.69 gscore + 0.00189 epik); 3.42 s
+                                         : -8.242 kcal/mol (-8.24 gscore + 0.00189 epik); 3.42 s
+                                         : -8.239 kcal/mol (-8.24 gscore + 0.00189 epik); 3.42 s
+                                         : -7.701 kcal/mol (-7.7 gscore + 0.00189 epik); 3.42 s
+LIG 17 (BPA_CID73864__prepared_state_016): -8.529 kcal/mol (-8.53 gscore + 0.00189 epik); 4.11 s
+                                         : -8.692 kcal/mol (-8.69 gscore + 0.00189 epik); 4.11 s
+                                         : -8.514 kcal/mol (-8.52 gscore + 0.00189 epik); 4.11 s
+                                         : -8.536 kcal/mol (-8.54 gscore + 0.00189 epik); 4.11 s
+                                         : -9.229 kcal/mol (-9.23 gscore + 0.00189 epik); 4.11 s
+                                         : -9.092 kcal/mol (-9.09 gscore + 0.00189 epik); 4.11 s
+                                         : -8.525 kcal/mol (-8.53 gscore + 0.00189 epik); 4.11 s
+                                         : -9.082 kcal/mol (-9.08 gscore + 0.00189 epik); 4.11 s
+                                         : -8.732 kcal/mol (-8.73 gscore + 0.00189 epik); 4.11 s
+                                         : -9.076 kcal/mol (-9.08 gscore + 0.00189 epik); 4.11 s
+                                         : -8.780 kcal/mol (-8.78 gscore + 0.00189 epik); 4.11 s
+                                         : -8.738 kcal/mol (-8.74 gscore + 0.00189 epik); 4.11 s
+                                         : -8.823 kcal/mol (-8.83 gscore + 0.00189 epik); 4.11 s
+                                         : -9.291 kcal/mol (-9.29 gscore + 0.00189 epik); 4.11 s
+                                         : -8.587 kcal/mol (-8.59 gscore + 0.00189 epik); 4.11 s
+                                         : -8.752 kcal/mol (-8.75 gscore + 0.00189 epik); 4.11 s
+                                         : -8.754 kcal/mol (-8.76 gscore + 0.00189 epik); 4.11 s
+                                         : -8.605 kcal/mol (-8.61 gscore + 0.00189 epik); 4.11 s
+                                         : -8.078 kcal/mol (-8.08 gscore + 0.00189 epik); 4.11 s
+                                         : -8.434 kcal/mol (-8.44 gscore + 0.00189 epik); 4.11 s
+LIG 18 (BPA_CID75575__prepared_state_017): -7.102 kcal/mol (-7.2 gscore + 0.0963 epik); 2.69 s
+                                         : -7.478 kcal/mol (-7.57 gscore + 0.0963 epik); 2.69 s
+                                         : -7.083 kcal/mol (-7.18 gscore + 0.0963 epik); 2.69 s
+                                         : -7.014 kcal/mol (-7.11 gscore + 0.0963 epik); 2.69 s
+                                         : -7.044 kcal/mol (-7.14 gscore + 0.0963 epik); 2.69 s
+                                         : -7.043 kcal/mol (-7.14 gscore + 0.0963 epik); 2.69 s
+                                         : -7.196 kcal/mol (-7.29 gscore + 0.0963 epik); 2.69 s
+                                         : -7.093 kcal/mol (-7.19 gscore + 0.0963 epik); 2.69 s
+                                         : -7.170 kcal/mol (-7.27 gscore + 0.0963 epik); 2.69 s
+                                         : -7.218 kcal/mol (-7.31 gscore + 0.0963 epik); 2.69 s
+                                         : -7.385 kcal/mol (-7.48 gscore + 0.0963 epik); 2.69 s
+                                         : -7.131 kcal/mol (-7.23 gscore + 0.0963 epik); 2.69 s
+                                         : -6.987 kcal/mol (-7.08 gscore + 0.0963 epik); 2.69 s
+                                         : -7.390 kcal/mol (-7.49 gscore + 0.0963 epik); 2.69 s
+                                         : -6.731 kcal/mol (-6.83 gscore + 0.0963 epik); 2.69 s
+                                         : -7.053 kcal/mol (-7.15 gscore + 0.0963 epik); 2.69 s
+                                         : -6.783 kcal/mol (-6.88 gscore + 0.0963 epik); 2.69 s
+                                         : -6.506 kcal/mol (-6.6 gscore + 0.0963 epik); 2.69 s
+                                         : -6.756 kcal/mol (-6.85 gscore + 0.0963 epik); 2.69 s
+                                         : -6.547 kcal/mol (-6.64 gscore + 0.0963 epik); 2.69 s
+LIG 19 (BPA_CID75575__prepared_state_018): -6.163 kcal/mol (-7.29 gscore + 1.13 epik); 2.17 s
+                                         : -6.154 kcal/mol (-7.28 gscore + 1.13 epik); 2.17 s
+                                         : -5.739 kcal/mol (-6.86 gscore + 1.13 epik); 2.17 s
+                                         : -6.141 kcal/mol (-7.27 gscore + 1.13 epik); 2.17 s
+                                         : -5.908 kcal/mol (-7.03 gscore + 1.13 epik); 2.17 s
+                                         : -5.994 kcal/mol (-7.12 gscore + 1.13 epik); 2.17 s
+                                         : -5.796 kcal/mol (-6.92 gscore + 1.13 epik); 2.17 s
+                                         : -6.097 kcal/mol (-7.22 gscore + 1.13 epik); 2.17 s
+                                         : -5.798 kcal/mol (-6.92 gscore + 1.13 epik); 2.17 s
+                                         : -5.537 kcal/mol (-6.66 gscore + 1.13 epik); 2.17 s
+                                         : -5.627 kcal/mol (-6.75 gscore + 1.13 epik); 2.17 s
+                                         : -5.800 kcal/mol (-6.93 gscore + 1.13 epik); 2.17 s
+                                         : -5.830 kcal/mol (-6.96 gscore + 1.13 epik); 2.17 s
+                                         : -5.854 kcal/mol (-6.98 gscore + 1.13 epik); 2.17 s
+                                         : -5.615 kcal/mol (-6.74 gscore + 1.13 epik); 2.17 s
+                                         : -5.779 kcal/mol (-6.9 gscore + 1.13 epik); 2.17 s
+                                         : -5.643 kcal/mol (-6.77 gscore + 1.13 epik); 2.17 s
+                                         : -5.737 kcal/mol (-6.86 gscore + 1.13 epik); 2.17 s
+                                         : -5.855 kcal/mol (-6.98 gscore + 1.13 epik); 2.17 s
+                                         : -5.811 kcal/mol (-6.94 gscore + 1.13 epik); 2.17 s
+LIG 20 (BPA_CID76382__prepared_state_019): -6.035 kcal/mol (-6.04 gscore + 5.81e-08 epik); 2.02 s
+                                         : -6.036 kcal/mol (-6.04 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.816 kcal/mol (-5.82 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.582 kcal/mol (-5.58 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.905 kcal/mol (-5.91 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.890 kcal/mol (-5.89 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.406 kcal/mol (-5.41 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.778 kcal/mol (-5.78 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.370 kcal/mol (-5.37 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.384 kcal/mol (-5.38 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.596 kcal/mol (-5.6 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.886 kcal/mol (-5.89 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.389 kcal/mol (-5.39 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.533 kcal/mol (-5.53 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.525 kcal/mol (-5.53 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.194 kcal/mol (-5.19 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.538 kcal/mol (-5.54 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.281 kcal/mol (-5.28 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.731 kcal/mol (-5.73 gscore + 5.81e-08 epik); 2.02 s
+                                         : -5.239 kcal/mol (-5.24 gscore + 5.81e-08 epik); 2.02 s
+LIG 21 (BPA_CID76382__prepared_state_020): -6.116 kcal/mol (-6.12 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.980 kcal/mol (-5.98 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.989 kcal/mol (-5.99 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.995 kcal/mol (-5.99 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.922 kcal/mol (-5.92 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.920 kcal/mol (-5.92 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.991 kcal/mol (-5.99 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.570 kcal/mol (-5.57 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.614 kcal/mol (-5.61 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.498 kcal/mol (-5.5 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.570 kcal/mol (-5.57 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.684 kcal/mol (-5.68 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.535 kcal/mol (-5.54 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.333 kcal/mol (-5.33 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.491 kcal/mol (-5.49 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.428 kcal/mol (-5.43 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.633 kcal/mol (-5.63 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.512 kcal/mol (-5.51 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.636 kcal/mol (-5.64 gscore + 5.81e-08 epik); 1.99 s
+                                         : -5.142 kcal/mol (-5.14 gscore + 5.81e-08 epik); 1.99 s
+LIG 22 (BPA_CID78805__prepared_state_021): -8.962 kcal/mol (-8.96 gscore + 0.00222 epik); 3.48 s
+                                         : -8.603 kcal/mol (-8.61 gscore + 0.00222 epik); 3.48 s
+                                         : -8.890 kcal/mol (-8.89 gscore + 0.00222 epik); 3.48 s
+                                         : -8.739 kcal/mol (-8.74 gscore + 0.00222 epik); 3.48 s
+                                         : -8.741 kcal/mol (-8.74 gscore + 0.00222 epik); 3.48 s
+                                         : -8.776 kcal/mol (-8.78 gscore + 0.00222 epik); 3.48 s
+                                         : -8.807 kcal/mol (-8.81 gscore + 0.00222 epik); 3.48 s
+                                         : -8.837 kcal/mol (-8.84 gscore + 0.00222 epik); 3.48 s
+                                         : -7.864 kcal/mol (-7.87 gscore + 0.00222 epik); 3.48 s
+                                         : -8.377 kcal/mol (-8.38 gscore + 0.00222 epik); 3.48 s
+                                         : -8.336 kcal/mol (-8.34 gscore + 0.00222 epik); 3.48 s
+                                         : -8.636 kcal/mol (-8.64 gscore + 0.00222 epik); 3.48 s
+                                         : -8.819 kcal/mol (-8.82 gscore + 0.00222 epik); 3.48 s
+                                         : -8.092 kcal/mol (-8.09 gscore + 0.00222 epik); 3.48 s
+                                         : -8.669 kcal/mol (-8.67 gscore + 0.00222 epik); 3.48 s
+                                         : -5.979 kcal/mol (-5.98 gscore + 0.00222 epik); 3.48 s
+                                         : -8.401 kcal/mol (-8.4 gscore + 0.00222 epik); 3.48 s
+                                         : -8.054 kcal/mol (-8.06 gscore + 0.00222 epik); 3.48 s
+                                         : -5.403 kcal/mol (-5.41 gscore + 0.00222 epik); 3.48 s
+                                         : -5.355 kcal/mol (-5.36 gscore + 0.00222 epik); 3.48 s
+LIG 23 (BPA_CID79345__prepared_state_022): -8.246 kcal/mol (-8.25 gscore + 0.000493 epik); 1.76 s
+                                         : -8.910 kcal/mol (-8.91 gscore + 0.000493 epik); 1.76 s
+                                         : -8.027 kcal/mol (-8.03 gscore + 0.000493 epik); 1.76 s
+                                         : -8.954 kcal/mol (-8.95 gscore + 0.000493 epik); 1.76 s
+                                         : -8.211 kcal/mol (-8.21 gscore + 0.000493 epik); 1.76 s
+                                         : -7.577 kcal/mol (-7.58 gscore + 0.000493 epik); 1.76 s
+                                         : -8.014 kcal/mol (-8.01 gscore + 0.000493 epik); 1.76 s
+                                         : -8.029 kcal/mol (-8.03 gscore + 0.000493 epik); 1.76 s
+                                         : -7.418 kcal/mol (-7.42 gscore + 0.000493 epik); 1.76 s
+                                         : -7.724 kcal/mol (-7.72 gscore + 0.000493 epik); 1.76 s
+                                         : -7.794 kcal/mol (-7.79 gscore + 0.000493 epik); 1.76 s
+                                         : -7.922 kcal/mol (-7.92 gscore + 0.000493 epik); 1.76 s
+                                         : -8.514 kcal/mol (-8.51 gscore + 0.000493 epik); 1.76 s
+                                         : -7.801 kcal/mol (-7.8 gscore + 0.000493 epik); 1.76 s
+                                         : -7.564 kcal/mol (-7.56 gscore + 0.000493 epik); 1.76 s
+                                         : -7.556 kcal/mol (-7.56 gscore + 0.000493 epik); 1.76 s
+                                         : -6.646 kcal/mol (-6.65 gscore + 0.000493 epik); 1.76 s
+                                         : -7.400 kcal/mol (-7.4 gscore + 0.000493 epik); 1.76 s
+                                         : -2.192 kcal/mol (-2.19 gscore + 0.000493 epik); 1.76 s
+                                         : -2.423 kcal/mol (-2.42 gscore + 0.000493 epik); 1.76 s
+LIG 24 (BPA_CID79381__prepared_state_023): -7.952 kcal/mol (-8.27 gscore + 0.314 epik); 2.45 s
+                                         : -7.842 kcal/mol (-8.16 gscore + 0.314 epik); 2.45 s
+                                         : -7.468 kcal/mol (-7.78 gscore + 0.314 epik); 2.45 s
+                                         : -7.445 kcal/mol (-7.76 gscore + 0.314 epik); 2.45 s
+                                         : -7.612 kcal/mol (-7.93 gscore + 0.314 epik); 2.45 s
+                                         : -7.601 kcal/mol (-7.92 gscore + 0.314 epik); 2.45 s
+                                         : -7.605 kcal/mol (-7.92 gscore + 0.314 epik); 2.45 s
+                                         : -7.008 kcal/mol (-7.32 gscore + 0.314 epik); 2.45 s
+                                         : -7.226 kcal/mol (-7.54 gscore + 0.314 epik); 2.45 s
+                                         : -7.268 kcal/mol (-7.58 gscore + 0.314 epik); 2.45 s
+                                         : -6.907 kcal/mol (-7.22 gscore + 0.314 epik); 2.45 s
+                                         : -7.191 kcal/mol (-7.5 gscore + 0.314 epik); 2.45 s
+                                         : -7.489 kcal/mol (-7.8 gscore + 0.314 epik); 2.45 s
+                                         : -6.875 kcal/mol (-7.19 gscore + 0.314 epik); 2.45 s
+                                         : -7.455 kcal/mol (-7.77 gscore + 0.314 epik); 2.45 s
+                                         : -6.849 kcal/mol (-7.16 gscore + 0.314 epik); 2.45 s
+                                         : -7.066 kcal/mol (-7.38 gscore + 0.314 epik); 2.45 s
+                                         : -7.392 kcal/mol (-7.71 gscore + 0.314 epik); 2.45 s
+                                         : -7.581 kcal/mol (-7.89 gscore + 0.314 epik); 2.45 s
+                                         : -7.550 kcal/mol (-7.86 gscore + 0.314 epik); 2.45 s
+LIG 25 (BPA_CID79381__prepared_state_024): -5.936 kcal/mol (-6.87 gscore + 0.937 epik); 2.23 s
+                                         : -5.928 kcal/mol (-6.87 gscore + 0.937 epik); 2.23 s
+                                         : -5.768 kcal/mol (-6.7 gscore + 0.937 epik); 2.23 s
+                                         : -6.029 kcal/mol (-6.97 gscore + 0.937 epik); 2.23 s
+                                         : -5.691 kcal/mol (-6.63 gscore + 0.937 epik); 2.23 s
+                                         : -6.012 kcal/mol (-6.95 gscore + 0.937 epik); 2.23 s
+                                         : -5.811 kcal/mol (-6.75 gscore + 0.937 epik); 2.23 s
+                                         : -5.901 kcal/mol (-6.84 gscore + 0.937 epik); 2.23 s
+                                         : -5.807 kcal/mol (-6.74 gscore + 0.937 epik); 2.23 s
+                                         : -5.801 kcal/mol (-6.74 gscore + 0.937 epik); 2.23 s
+                                         : -5.864 kcal/mol (-6.8 gscore + 0.937 epik); 2.23 s
+                                         : -5.934 kcal/mol (-6.87 gscore + 0.937 epik); 2.23 s
+                                         : -5.714 kcal/mol (-6.65 gscore + 0.937 epik); 2.23 s
+                                         : -5.582 kcal/mol (-6.52 gscore + 0.937 epik); 2.23 s
+                                         : -5.536 kcal/mol (-6.47 gscore + 0.937 epik); 2.23 s
+                                         : -5.896 kcal/mol (-6.83 gscore + 0.937 epik); 2.23 s
+                                         : -5.754 kcal/mol (-6.69 gscore + 0.937 epik); 2.23 s
+                                         : -5.703 kcal/mol (-6.64 gscore + 0.937 epik); 2.23 s
+                                         : -5.365 kcal/mol (-6.3 gscore + 0.937 epik); 2.23 s
+                                         : -5.784 kcal/mol (-6.72 gscore + 0.937 epik); 2.23 s
+LIG 26 (BPA_CID79381__prepared_state_025): -6.689 kcal/mol (-7.8 gscore + 1.11 epik); 2.18 s
+                                         : -6.688 kcal/mol (-7.8 gscore + 1.11 epik); 2.18 s
+                                         : -6.324 kcal/mol (-7.44 gscore + 1.11 epik); 2.18 s
+                                         : -6.302 kcal/mol (-7.42 gscore + 1.11 epik); 2.18 s
+                                         : -6.585 kcal/mol (-7.7 gscore + 1.11 epik); 2.18 s
+                                         : -6.666 kcal/mol (-7.78 gscore + 1.11 epik); 2.18 s
+                                         : -6.919 kcal/mol (-8.03 gscore + 1.11 epik); 2.18 s
+                                         : -6.868 kcal/mol (-7.98 gscore + 1.11 epik); 2.18 s
+                                         : -6.246 kcal/mol (-7.36 gscore + 1.11 epik); 2.18 s
+                                         : -6.416 kcal/mol (-7.53 gscore + 1.11 epik); 2.18 s
+                                         : -6.539 kcal/mol (-7.65 gscore + 1.11 epik); 2.18 s
+                                         : -6.508 kcal/mol (-7.62 gscore + 1.11 epik); 2.18 s
+                                         : -6.245 kcal/mol (-7.36 gscore + 1.11 epik); 2.18 s
+                                         : -6.442 kcal/mol (-7.56 gscore + 1.11 epik); 2.18 s
+                                         : -6.865 kcal/mol (-7.98 gscore + 1.11 epik); 2.18 s
+                                         : -6.225 kcal/mol (-7.34 gscore + 1.11 epik); 2.18 s
+                                         : -6.393 kcal/mol (-7.51 gscore + 1.11 epik); 2.18 s
+                                         : -6.074 kcal/mol (-7.19 gscore + 1.11 epik); 2.18 s
+                                         : -6.532 kcal/mol (-7.65 gscore + 1.11 epik); 2.18 s
+                                         : -5.847 kcal/mol (-6.96 gscore + 1.11 epik); 2.18 s
+LIG 27 (BPA_CID79717__prepared_state_026): -9.026 kcal/mol (-9.03 gscore + 0.000462 epik); 2.57 s
+                                         : -8.885 kcal/mol (-8.89 gscore + 0.000462 epik); 2.57 s
+                                         : -8.867 kcal/mol (-8.87 gscore + 0.000462 epik); 2.57 s
+                                         : -8.750 kcal/mol (-8.75 gscore + 0.000462 epik); 2.57 s
+                                         : -8.519 kcal/mol (-8.52 gscore + 0.000462 epik); 2.57 s
+                                         : -8.432 kcal/mol (-8.43 gscore + 0.000462 epik); 2.57 s
+                                         : -8.374 kcal/mol (-8.37 gscore + 0.000462 epik); 2.57 s
+                                         : -8.347 kcal/mol (-8.35 gscore + 0.000462 epik); 2.57 s
+                                         : -8.663 kcal/mol (-8.66 gscore + 0.000462 epik); 2.57 s
+                                         : -7.985 kcal/mol (-7.99 gscore + 0.000462 epik); 2.57 s
+                                         : -8.387 kcal/mol (-8.39 gscore + 0.000462 epik); 2.57 s
+                                         : -8.136 kcal/mol (-8.14 gscore + 0.000462 epik); 2.57 s
+                                         : -8.443 kcal/mol (-8.44 gscore + 0.000462 epik); 2.57 s
+                                         : -7.834 kcal/mol (-7.83 gscore + 0.000462 epik); 2.57 s
+                                         : -8.138 kcal/mol (-8.14 gscore + 0.000462 epik); 2.57 s
+                                         : -8.021 kcal/mol (-8.02 gscore + 0.000462 epik); 2.57 s
+                                         : -7.580 kcal/mol (-7.58 gscore + 0.000462 epik); 2.57 s
+                                         : -7.938 kcal/mol (-7.94 gscore + 0.000462 epik); 2.57 s
+                                         : -7.748 kcal/mol (-7.75 gscore + 0.000462 epik); 2.57 s
+                                         : -7.086 kcal/mol (-7.09 gscore + 0.000462 epik); 2.57 s
+LIG 28 (BPA_CID81259__prepared_state_027): -9.137 kcal/mol (-9.14 gscore + 0.00189 epik); 3.99 s
+                                         : -8.737 kcal/mol (-8.74 gscore + 0.00189 epik); 3.99 s
+                                         : -8.783 kcal/mol (-8.79 gscore + 0.00189 epik); 3.99 s
+                                         : -9.300 kcal/mol (-9.3 gscore + 0.00189 epik); 3.99 s
+                                         : -8.546 kcal/mol (-8.55 gscore + 0.00189 epik); 3.99 s
+                                         : -8.543 kcal/mol (-8.54 gscore + 0.00189 epik); 3.99 s
+                                         : -8.541 kcal/mol (-8.54 gscore + 0.00189 epik); 3.99 s
+                                         : -8.311 kcal/mol (-8.31 gscore + 0.00189 epik); 3.99 s
+                                         : -8.112 kcal/mol (-8.11 gscore + 0.00189 epik); 3.99 s
+                                         : -9.052 kcal/mol (-9.05 gscore + 0.00189 epik); 3.99 s
+                                         : -8.174 kcal/mol (-8.18 gscore + 0.00189 epik); 3.99 s
+                                         : -7.931 kcal/mol (-7.93 gscore + 0.00189 epik); 3.99 s
+                                         : -7.613 kcal/mol (-7.61 gscore + 0.00189 epik); 3.99 s
+                                         : -7.610 kcal/mol (-7.61 gscore + 0.00189 epik); 3.99 s
+                                         : -7.561 kcal/mol (-7.56 gscore + 0.00189 epik); 3.99 s
+                                         : -7.545 kcal/mol (-7.55 gscore + 0.00189 epik); 3.99 s
+                                         : -7.386 kcal/mol (-7.39 gscore + 0.00189 epik); 3.99 s
+                                         : -7.501 kcal/mol (-7.5 gscore + 0.00189 epik); 3.99 s
+                                         : -7.321 kcal/mol (-7.32 gscore + 0.00189 epik); 3.99 s
+                                         : -7.668 kcal/mol (-7.67 gscore + 0.00189 epik); 3.99 s
+LIG 29 (BPA_CID113063__prepared_state_028): -8.421 kcal/mol (-8.6 gscore + 0.177 epik); 6.82 s
+                                          : -8.230 kcal/mol (-8.41 gscore + 0.177 epik); 6.82 s
+                                          : -8.117 kcal/mol (-8.29 gscore + 0.177 epik); 6.82 s
+                                          : -8.469 kcal/mol (-8.65 gscore + 0.177 epik); 6.82 s
+                                          : -8.165 kcal/mol (-8.34 gscore + 0.177 epik); 6.82 s
+                                          : -8.008 kcal/mol (-8.19 gscore + 0.177 epik); 6.82 s
+                                          : -8.382 kcal/mol (-8.56 gscore + 0.177 epik); 6.82 s
+                                          : -5.991 kcal/mol (-6.17 gscore + 0.177 epik); 6.82 s
+                                          : -7.307 kcal/mol (-7.48 gscore + 0.177 epik); 6.82 s
+                                          : -6.567 kcal/mol (-6.74 gscore + 0.177 epik); 6.82 s
+                                          : -7.441 kcal/mol (-7.62 gscore + 0.177 epik); 6.82 s
+                                          : -7.304 kcal/mol (-7.48 gscore + 0.177 epik); 6.82 s
+                                          : -7.072 kcal/mol (-7.25 gscore + 0.177 epik); 6.82 s
+                                          : -7.238 kcal/mol (-7.42 gscore + 0.177 epik); 6.82 s
+                                          : -6.672 kcal/mol (-6.85 gscore + 0.177 epik); 6.82 s
+                                          : -7.329 kcal/mol (-7.51 gscore + 0.177 epik); 6.82 s
+                                          : -6.519 kcal/mol (-6.7 gscore + 0.177 epik); 6.82 s
+                                          : -6.253 kcal/mol (-6.43 gscore + 0.177 epik); 6.82 s
+                                          : -5.857 kcal/mol (-6.03 gscore + 0.177 epik); 6.82 s
+                                          : -6.409 kcal/mol (-6.59 gscore + 0.177 epik); 6.82 s
+LIG 30 (BPA_CID113063__prepared_state_029): -7.299 kcal/mol (-8.1 gscore + 0.801 epik); 3.85 s
+                                          : -5.677 kcal/mol (-6.48 gscore + 0.801 epik); 3.85 s
+                                          : -6.378 kcal/mol (-7.18 gscore + 0.801 epik); 3.85 s
+                                          : -4.862 kcal/mol (-5.66 gscore + 0.801 epik); 3.85 s
+                                          : -6.360 kcal/mol (-7.16 gscore + 0.801 epik); 3.85 s
+                                          : -5.946 kcal/mol (-6.75 gscore + 0.801 epik); 3.85 s
+                                          : -6.322 kcal/mol (-7.12 gscore + 0.801 epik); 3.85 s
+                                          : -4.666 kcal/mol (-5.47 gscore + 0.801 epik); 3.85 s
+                                          : -4.494 kcal/mol (-5.29 gscore + 0.801 epik); 3.85 s
+                                          : -5.517 kcal/mol (-6.32 gscore + 0.801 epik); 3.85 s
+                                          : -5.552 kcal/mol (-6.35 gscore + 0.801 epik); 3.85 s
+                                          : -5.370 kcal/mol (-6.17 gscore + 0.801 epik); 3.85 s
+                                          : -5.867 kcal/mol (-6.67 gscore + 0.801 epik); 3.85 s
+                                          : -0.430 kcal/mol (-1.23 gscore + 0.801 epik); 3.85 s
+                                          : -4.479 kcal/mol (-5.28 gscore + 0.801 epik); 3.85 s
+                                          : -3.636 kcal/mol (-4.44 gscore + 0.801 epik); 3.85 s
+                                          : -5.318 kcal/mol (-6.12 gscore + 0.801 epik); 3.85 s
+                                          : 0.136 kcal/mol (-0.665 gscore + 0.801 epik); 3.85 s
+                                          : -4.955 kcal/mol (-5.76 gscore + 0.801 epik); 3.85 s
+                                          : -3.827 kcal/mol (-4.63 gscore + 0.801 epik); 3.85 s
+LIG 31 (BPA_CID228537__prepared_state_030): -8.719 kcal/mol (-8.72 gscore + 0.000317 epik); 4.38 s
+                                          : -8.783 kcal/mol (-8.78 gscore + 0.000317 epik); 4.38 s
+                                          : -7.754 kcal/mol (-7.75 gscore + 0.000317 epik); 4.38 s
+                                          : -7.913 kcal/mol (-7.91 gscore + 0.000317 epik); 4.38 s
+                                          : -8.116 kcal/mol (-8.12 gscore + 0.000317 epik); 4.38 s
+                                          : -8.737 kcal/mol (-8.74 gscore + 0.000317 epik); 4.38 s
+                                          : -7.911 kcal/mol (-7.91 gscore + 0.000317 epik); 4.38 s
+                                          : -8.696 kcal/mol (-8.7 gscore + 0.000317 epik); 4.38 s
+                                          : -8.067 kcal/mol (-8.07 gscore + 0.000317 epik); 4.38 s
+                                          : -8.247 kcal/mol (-8.25 gscore + 0.000317 epik); 4.38 s
+                                          : -7.785 kcal/mol (-7.78 gscore + 0.000317 epik); 4.38 s
+                                          : -7.455 kcal/mol (-7.46 gscore + 0.000317 epik); 4.38 s
+                                          : -3.401 kcal/mol (-3.4 gscore + 0.000317 epik); 4.38 s
+                                          : -8.556 kcal/mol (-8.56 gscore + 0.000317 epik); 4.38 s
+                                          : -8.746 kcal/mol (-8.75 gscore + 0.000317 epik); 4.38 s
+                                          : -7.685 kcal/mol (-7.68 gscore + 0.000317 epik); 4.38 s
+                                          : -8.933 kcal/mol (-8.93 gscore + 0.000317 epik); 4.38 s
+                                          : -8.067 kcal/mol (-8.07 gscore + 0.000317 epik); 4.38 s
+                                          : -2.543 kcal/mol (-2.54 gscore + 0.000317 epik); 4.38 s
+                                          : -2.851 kcal/mol (-2.85 gscore + 0.000317 epik); 4.38 s
+LIG 32 (BPA_CID232446__prepared_state_031): -9.736 kcal/mol (-9.74 gscore + 0.00302 epik); 5.08 s
+                                          : -9.358 kcal/mol (-9.36 gscore + 0.00302 epik); 5.08 s
+                                          : -9.421 kcal/mol (-9.42 gscore + 0.00302 epik); 5.08 s
+                                          : -8.720 kcal/mol (-8.72 gscore + 0.00302 epik); 5.08 s
+                                          : -9.480 kcal/mol (-9.48 gscore + 0.00302 epik); 5.08 s
+                                          : -9.282 kcal/mol (-9.28 gscore + 0.00302 epik); 5.08 s
+                                          : -9.102 kcal/mol (-9.11 gscore + 0.00302 epik); 5.08 s
+                                          : -9.089 kcal/mol (-9.09 gscore + 0.00302 epik); 5.08 s
+                                          : -8.478 kcal/mol (-8.48 gscore + 0.00302 epik); 5.08 s
+                                          : -9.390 kcal/mol (-9.39 gscore + 0.00302 epik); 5.08 s
+                                          : -8.753 kcal/mol (-8.76 gscore + 0.00302 epik); 5.08 s
+                                          : -8.480 kcal/mol (-8.48 gscore + 0.00302 epik); 5.08 s
+                                          : -9.055 kcal/mol (-9.06 gscore + 0.00302 epik); 5.08 s
+                                          : -9.162 kcal/mol (-9.17 gscore + 0.00302 epik); 5.08 s
+                                          : -8.974 kcal/mol (-8.98 gscore + 0.00302 epik); 5.08 s
+                                          : -8.410 kcal/mol (-8.41 gscore + 0.00302 epik); 5.08 s
+                                          : -8.724 kcal/mol (-8.73 gscore + 0.00302 epik); 5.08 s
+                                          : -9.042 kcal/mol (-9.05 gscore + 0.00302 epik); 5.08 s
+                                          : -8.048 kcal/mol (-8.05 gscore + 0.00302 epik); 5.08 s
+                                          : -8.147 kcal/mol (-8.15 gscore + 0.00302 epik); 5.08 s
+LIG 33 (BPA_CID608116__prepared_state_032): -8.489 kcal/mol (-8.49 gscore + 0.00241 epik); 2.88 s
+                                          : -8.430 kcal/mol (-8.43 gscore + 0.00241 epik); 2.88 s
+                                          : -8.426 kcal/mol (-8.43 gscore + 0.00241 epik); 2.88 s
+                                          : -8.562 kcal/mol (-8.56 gscore + 0.00241 epik); 2.88 s
+                                          : -8.439 kcal/mol (-8.44 gscore + 0.00241 epik); 2.88 s
+                                          : -8.430 kcal/mol (-8.43 gscore + 0.00241 epik); 2.88 s
+                                          : -8.457 kcal/mol (-8.46 gscore + 0.00241 epik); 2.88 s
+                                          : -8.512 kcal/mol (-8.51 gscore + 0.00241 epik); 2.88 s
+                                          : -8.540 kcal/mol (-8.54 gscore + 0.00241 epik); 2.88 s
+                                          : -8.380 kcal/mol (-8.38 gscore + 0.00241 epik); 2.88 s
+                                          : -8.240 kcal/mol (-8.24 gscore + 0.00241 epik); 2.88 s
+                                          : -8.289 kcal/mol (-8.29 gscore + 0.00241 epik); 2.88 s
+                                          : -8.199 kcal/mol (-8.2 gscore + 0.00241 epik); 2.88 s
+                                          : -8.495 kcal/mol (-8.5 gscore + 0.00241 epik); 2.88 s
+                                          : -8.593 kcal/mol (-8.6 gscore + 0.00241 epik); 2.88 s
+                                          : -8.476 kcal/mol (-8.48 gscore + 0.00241 epik); 2.88 s
+                                          : -8.207 kcal/mol (-8.21 gscore + 0.00241 epik); 2.88 s
+                                          : -8.338 kcal/mol (-8.34 gscore + 0.00241 epik); 2.88 s
+                                          : -7.833 kcal/mol (-7.84 gscore + 0.00241 epik); 2.88 s
+                                          : -7.842 kcal/mol (-7.84 gscore + 0.00241 epik); 2.88 s
+LIG 34 (BPA_CID623849__prepared_state_033): -8.739 kcal/mol (-8.74 gscore + 0.00382 epik); 3.34 s
+                                          : -8.745 kcal/mol (-8.75 gscore + 0.00382 epik); 3.34 s
+                                          : -8.248 kcal/mol (-8.25 gscore + 0.00382 epik); 3.34 s
+                                          : -8.396 kcal/mol (-8.4 gscore + 0.00382 epik); 3.34 s
+                                          : -8.341 kcal/mol (-8.35 gscore + 0.00382 epik); 3.34 s
+                                          : -8.431 kcal/mol (-8.43 gscore + 0.00382 epik); 3.34 s
+                                          : -7.688 kcal/mol (-7.69 gscore + 0.00382 epik); 3.34 s
+                                          : -7.885 kcal/mol (-7.89 gscore + 0.00382 epik); 3.34 s
+                                          : -7.880 kcal/mol (-7.88 gscore + 0.00382 epik); 3.34 s
+                                          : -7.949 kcal/mol (-7.95 gscore + 0.00382 epik); 3.34 s
+                                          : -7.745 kcal/mol (-7.75 gscore + 0.00382 epik); 3.34 s
+                                          : -8.019 kcal/mol (-8.02 gscore + 0.00382 epik); 3.34 s
+                                          : -7.106 kcal/mol (-7.11 gscore + 0.00382 epik); 3.34 s
+                                          : -1.690 kcal/mol (-1.69 gscore + 0.00382 epik); 3.34 s
+                                          : -2.059 kcal/mol (-2.06 gscore + 0.00382 epik); 3.34 s
+                                          : -1.959 kcal/mol (-1.96 gscore + 0.00382 epik); 3.34 s
+                                          : -7.646 kcal/mol (-7.65 gscore + 0.00382 epik); 3.34 s
+                                          : -8.140 kcal/mol (-8.14 gscore + 0.00382 epik); 3.34 s
+                                          : -1.556 kcal/mol (-1.56 gscore + 0.00382 epik); 3.34 s
+                                          : -6.954 kcal/mol (-6.96 gscore + 0.00382 epik); 3.34 s
+LIG 35 (BPA_CID630355__prepared_state_034): -4.907 kcal/mol (-4.91 gscore + 0.00189 epik); 2.43 s
+                                          : -3.666 kcal/mol (-3.67 gscore + 0.00189 epik); 2.43 s
+                                          : -2.661 kcal/mol (-2.66 gscore + 0.00189 epik); 2.43 s
+                                          : -3.220 kcal/mol (-3.22 gscore + 0.00189 epik); 2.43 s
+                                          : -2.881 kcal/mol (-2.88 gscore + 0.00189 epik); 2.43 s
+                                          : -2.660 kcal/mol (-2.66 gscore + 0.00189 epik); 2.43 s
+                                          : -2.798 kcal/mol (-2.8 gscore + 0.00189 epik); 2.43 s
+                                          : -1.817 kcal/mol (-1.82 gscore + 0.00189 epik); 2.43 s
+                                          : -1.219 kcal/mol (-1.22 gscore + 0.00189 epik); 2.43 s
+                                          : -2.015 kcal/mol (-2.02 gscore + 0.00189 epik); 2.43 s
+                                          : -1.322 kcal/mol (-1.32 gscore + 0.00189 epik); 2.43 s
+                                          : -2.141 kcal/mol (-2.14 gscore + 0.00189 epik); 2.43 s
+                                          : -0.816 kcal/mol (-0.817 gscore + 0.00189 epik); 2.43 s
+LIG 36 (BPA_CID833466__prepared_state_035): -7.592 kcal/mol (-7.65 gscore + 0.059 epik); 4.59 s
+                                          : -7.214 kcal/mol (-7.27 gscore + 0.059 epik); 4.59 s
+                                          : -7.752 kcal/mol (-7.81 gscore + 0.059 epik); 4.59 s
+                                          : -7.549 kcal/mol (-7.61 gscore + 0.059 epik); 4.59 s
+                                          : -7.637 kcal/mol (-7.7 gscore + 0.059 epik); 4.59 s
+                                          : -4.035 kcal/mol (-4.09 gscore + 0.059 epik); 4.59 s
+                                          : -6.824 kcal/mol (-6.88 gscore + 0.059 epik); 4.59 s
+                                          : -7.237 kcal/mol (-7.3 gscore + 0.059 epik); 4.59 s
+                                          : -6.810 kcal/mol (-6.87 gscore + 0.059 epik); 4.59 s
+                                          : -7.049 kcal/mol (-7.11 gscore + 0.059 epik); 4.59 s
+                                          : -6.651 kcal/mol (-6.71 gscore + 0.059 epik); 4.59 s
+                                          : -7.022 kcal/mol (-7.08 gscore + 0.059 epik); 4.59 s
+                                          : -5.653 kcal/mol (-5.71 gscore + 0.059 epik); 4.59 s
+                                          : -7.924 kcal/mol (-7.98 gscore + 0.059 epik); 4.59 s
+                                          : -6.850 kcal/mol (-6.91 gscore + 0.059 epik); 4.59 s
+                                          : -7.727 kcal/mol (-7.79 gscore + 0.059 epik); 4.59 s
+                                          : -6.910 kcal/mol (-6.97 gscore + 0.059 epik); 4.59 s
+                                          : -6.160 kcal/mol (-6.22 gscore + 0.059 epik); 4.59 s
+                                          : -6.244 kcal/mol (-6.3 gscore + 0.059 epik); 4.59 s
+                                          : -1.632 kcal/mol (-1.69 gscore + 0.059 epik); 4.59 s
+LIG 37 (BPA_CID2054598__prepared_state_036): -7.403 kcal/mol (-7.58 gscore + 0.177 epik); 5.02 s
+                                           : -7.437 kcal/mol (-7.61 gscore + 0.177 epik); 5.02 s
+                                           : -7.179 kcal/mol (-7.36 gscore + 0.177 epik); 5.02 s
+                                           : -7.103 kcal/mol (-7.28 gscore + 0.177 epik); 5.02 s
+                                           : -6.675 kcal/mol (-6.85 gscore + 0.177 epik); 5.02 s
+                                           : -6.721 kcal/mol (-6.9 gscore + 0.177 epik); 5.02 s
+                                           : -6.641 kcal/mol (-6.82 gscore + 0.177 epik); 5.02 s
+                                           : -6.522 kcal/mol (-6.7 gscore + 0.177 epik); 5.02 s
+                                           : -6.669 kcal/mol (-6.85 gscore + 0.177 epik); 5.02 s
+                                           : -6.484 kcal/mol (-6.66 gscore + 0.177 epik); 5.02 s
+                                           : -5.356 kcal/mol (-5.53 gscore + 0.177 epik); 5.02 s
+                                           : -6.670 kcal/mol (-6.85 gscore + 0.177 epik); 5.02 s
+                                           : -6.161 kcal/mol (-6.34 gscore + 0.177 epik); 5.02 s
+                                           : -6.352 kcal/mol (-6.53 gscore + 0.177 epik); 5.02 s
+                                           : -6.164 kcal/mol (-6.34 gscore + 0.177 epik); 5.02 s
+                                           : -7.117 kcal/mol (-7.29 gscore + 0.177 epik); 5.02 s
+                                           : -7.043 kcal/mol (-7.22 gscore + 0.177 epik); 5.02 s
+                                           : -6.697 kcal/mol (-6.87 gscore + 0.177 epik); 5.02 s
+                                           : -5.139 kcal/mol (-5.32 gscore + 0.177 epik); 5.02 s
+                                           : -5.059 kcal/mol (-5.24 gscore + 0.177 epik); 5.02 s
+LIG 38 (BPA_CID2054598__prepared_state_037): -5.419 kcal/mol (-6.22 gscore + 0.801 epik); 3.61 s
+                                           : -5.733 kcal/mol (-6.53 gscore + 0.801 epik); 3.61 s
+                                           : -5.546 kcal/mol (-6.35 gscore + 0.801 epik); 3.61 s
+                                           : -5.400 kcal/mol (-6.2 gscore + 0.801 epik); 3.61 s
+                                           : -4.436 kcal/mol (-5.24 gscore + 0.801 epik); 3.61 s
+                                           : -4.011 kcal/mol (-4.81 gscore + 0.801 epik); 3.61 s
+                                           : -5.230 kcal/mol (-6.03 gscore + 0.801 epik); 3.61 s
+                                           : -4.898 kcal/mol (-5.7 gscore + 0.801 epik); 3.61 s
+                                           : -4.247 kcal/mol (-5.05 gscore + 0.801 epik); 3.61 s
+                                           : -3.832 kcal/mol (-4.63 gscore + 0.801 epik); 3.61 s
+                                           : -4.696 kcal/mol (-5.5 gscore + 0.801 epik); 3.61 s
+                                           : -4.821 kcal/mol (-5.62 gscore + 0.801 epik); 3.61 s
+                                           : -5.010 kcal/mol (-5.81 gscore + 0.801 epik); 3.61 s
+                                           : -4.715 kcal/mol (-5.52 gscore + 0.801 epik); 3.61 s
+                                           : -3.458 kcal/mol (-4.26 gscore + 0.801 epik); 3.61 s
+                                           : -4.696 kcal/mol (-5.5 gscore + 0.801 epik); 3.61 s
+                                           : -4.655 kcal/mol (-5.46 gscore + 0.801 epik); 3.61 s
+                                           : -5.051 kcal/mol (-5.85 gscore + 0.801 epik); 3.61 s
+                                           : -4.270 kcal/mol (-5.07 gscore + 0.801 epik); 3.61 s
+                                           : -3.720 kcal/mol (-4.52 gscore + 0.801 epik); 3.61 s
+LIG 39 (BPA_CID3086375__prepared_state_038): -9.105 kcal/mol (-9.11 gscore + 0.00632 epik); 12.68 s
+                                           : -8.627 kcal/mol (-8.63 gscore + 0.00632 epik); 12.68 s
+                                           : -8.870 kcal/mol (-8.88 gscore + 0.00632 epik); 12.68 s
+                                           : -8.741 kcal/mol (-8.75 gscore + 0.00632 epik); 12.68 s
+                                           : -8.865 kcal/mol (-8.87 gscore + 0.00632 epik); 12.68 s
+                                           : -8.648 kcal/mol (-8.65 gscore + 0.00632 epik); 12.68 s
+                                           : -8.117 kcal/mol (-8.12 gscore + 0.00632 epik); 12.68 s
+                                           : -8.238 kcal/mol (-8.24 gscore + 0.00632 epik); 12.68 s
+                                           : -8.646 kcal/mol (-8.65 gscore + 0.00632 epik); 12.68 s
+                                           : -9.228 kcal/mol (-9.23 gscore + 0.00632 epik); 12.68 s
+                                           : -8.274 kcal/mol (-8.28 gscore + 0.00632 epik); 12.68 s
+                                           : -8.205 kcal/mol (-8.21 gscore + 0.00632 epik); 12.68 s
+                                           : -8.467 kcal/mol (-8.47 gscore + 0.00632 epik); 12.68 s
+                                           : -8.440 kcal/mol (-8.45 gscore + 0.00632 epik); 12.68 s
+                                           : -8.839 kcal/mol (-8.85 gscore + 0.00632 epik); 12.68 s
+                                           : -8.490 kcal/mol (-8.5 gscore + 0.00632 epik); 12.68 s
+                                           : -8.587 kcal/mol (-8.59 gscore + 0.00632 epik); 12.68 s
+                                           : -7.885 kcal/mol (-7.89 gscore + 0.00632 epik); 12.68 s
+                                           : -8.086 kcal/mol (-8.09 gscore + 0.00632 epik); 12.68 s
+                                           : -8.155 kcal/mol (-8.16 gscore + 0.00632 epik); 12.68 s
+No good poses after scoring!
+SKIP LIG       40 (BPA_CID3596056__prepared_state_039): NO POSES STORED FOR LIGAND
+No good poses after scoring!
+SKIP LIG       41 (BPA_CID9874825__prepared_state_040): NO POSES STORED FOR LIGAND
+LIG 42 (BPA_CID9904141__prepared_state_041): -7.636 kcal/mol (-7.81 gscore + 0.177 epik); 2.96 s
+                                           : -4.907 kcal/mol (-5.08 gscore + 0.177 epik); 2.96 s
+                                           : -6.369 kcal/mol (-6.55 gscore + 0.177 epik); 2.96 s
+                                           : -6.632 kcal/mol (-6.81 gscore + 0.177 epik); 2.96 s
+                                           : -5.191 kcal/mol (-5.37 gscore + 0.177 epik); 2.96 s
+                                           : -5.386 kcal/mol (-5.56 gscore + 0.177 epik); 2.96 s
+                                           : -5.195 kcal/mol (-5.37 gscore + 0.177 epik); 2.96 s
+                                           : -4.947 kcal/mol (-5.12 gscore + 0.177 epik); 2.96 s
+                                           : -5.618 kcal/mol (-5.8 gscore + 0.177 epik); 2.96 s
+                                           : -5.075 kcal/mol (-5.25 gscore + 0.177 epik); 2.96 s
+                                           : -5.014 kcal/mol (-5.19 gscore + 0.177 epik); 2.96 s
+                                           : -4.750 kcal/mol (-4.93 gscore + 0.177 epik); 2.96 s
+                                           : -6.935 kcal/mol (-7.11 gscore + 0.177 epik); 2.96 s
+                                           : -6.935 kcal/mol (-7.11 gscore + 0.177 epik); 2.96 s
+                                           : -5.475 kcal/mol (-5.65 gscore + 0.177 epik); 2.96 s
+                                           : -4.823 kcal/mol (-5.0 gscore + 0.177 epik); 2.96 s
+                                           : -5.672 kcal/mol (-5.85 gscore + 0.177 epik); 2.96 s
+                                           : -6.170 kcal/mol (-6.35 gscore + 0.177 epik); 2.96 s
+                                           : -6.907 kcal/mol (-7.08 gscore + 0.177 epik); 2.96 s
+                                           : -6.064 kcal/mol (-6.24 gscore + 0.177 epik); 2.96 s
+LIG 43 (BPA_CID9904141__prepared_state_042): -6.207 kcal/mol (-7.01 gscore + 0.801 epik); 2.90 s
+                                           : -5.497 kcal/mol (-6.3 gscore + 0.801 epik); 2.90 s
+                                           : -3.928 kcal/mol (-4.73 gscore + 0.801 epik); 2.90 s
+                                           : -4.208 kcal/mol (-5.01 gscore + 0.801 epik); 2.90 s
+                                           : -4.390 kcal/mol (-5.19 gscore + 0.801 epik); 2.90 s
+                                           : -5.072 kcal/mol (-5.87 gscore + 0.801 epik); 2.90 s
+                                           : -4.372 kcal/mol (-5.17 gscore + 0.801 epik); 2.90 s
+                                           : -3.433 kcal/mol (-4.23 gscore + 0.801 epik); 2.90 s
+                                           : -5.135 kcal/mol (-5.94 gscore + 0.801 epik); 2.90 s
+                                           : -5.141 kcal/mol (-5.94 gscore + 0.801 epik); 2.90 s
+                                           : -3.306 kcal/mol (-4.11 gscore + 0.801 epik); 2.90 s
+                                           : -3.167 kcal/mol (-3.97 gscore + 0.801 epik); 2.90 s
+                                           : -3.230 kcal/mol (-4.03 gscore + 0.801 epik); 2.90 s
+                                           : -3.187 kcal/mol (-3.99 gscore + 0.801 epik); 2.90 s
+                                           : -4.793 kcal/mol (-5.59 gscore + 0.801 epik); 2.90 s
+                                           : -3.586 kcal/mol (-4.39 gscore + 0.801 epik); 2.90 s
+                                           : -4.612 kcal/mol (-5.41 gscore + 0.801 epik); 2.90 s
+                                           : -3.789 kcal/mol (-4.59 gscore + 0.801 epik); 2.90 s
+                                           : -2.697 kcal/mol (-3.5 gscore + 0.801 epik); 2.90 s
+                                           : -4.085 kcal/mol (-4.89 gscore + 0.801 epik); 2.90 s
+LIG 44 (BPA_CID13059052__prepared_state_043): -3.845 kcal/mol (-3.85 gscore + 0.00366 epik); 4.16 s
+                                            : -3.178 kcal/mol (-3.18 gscore + 0.00366 epik); 4.16 s
+                                            : -2.682 kcal/mol (-2.69 gscore + 0.00366 epik); 4.16 s
+                                            : -2.837 kcal/mol (-2.84 gscore + 0.00366 epik); 4.16 s
+                                            : -2.682 kcal/mol (-2.69 gscore + 0.00366 epik); 4.16 s
+                                            : -2.789 kcal/mol (-2.79 gscore + 0.00366 epik); 4.16 s
+                                            : -1.659 kcal/mol (-1.66 gscore + 0.00366 epik); 4.16 s
+                                            : -1.200 kcal/mol (-1.2 gscore + 0.00366 epik); 4.16 s
+                                            : -1.133 kcal/mol (-1.14 gscore + 0.00366 epik); 4.16 s
+                                            : -1.068 kcal/mol (-1.07 gscore + 0.00366 epik); 4.16 s
+The ligand had one or more atoms outside the grid box during energy evaluation or minimization.
+LIG 45 (BPA_CID22035425__prepared_state_044): 2.549 kcal/mol (2.55 gscore + 0.000891 epik); 3.07 s
+                                            : 2.688 kcal/mol (2.69 gscore + 0.000891 epik); 3.07 s
+                                            : 5.058 kcal/mol (5.06 gscore + 0.000891 epik); 3.07 s
+                                            : 2.619 kcal/mol (2.62 gscore + 0.000891 epik); 3.07 s
+LIG 46 (NATIVE_ESR1__prepared_state_000): -10.762 kcal/mol (-10.8 gscore + 0.00053 epik); 2.88 s
+                                        : -10.373 kcal/mol (-10.4 gscore + 0.00053 epik); 2.88 s
+                                        : -9.822 kcal/mol (-9.82 gscore + 0.00053 epik); 2.88 s
+                                        : -9.576 kcal/mol (-9.58 gscore + 0.00053 epik); 2.88 s
+                                        : -9.761 kcal/mol (-9.76 gscore + 0.00053 epik); 2.88 s
+                                        : -9.508 kcal/mol (-9.51 gscore + 0.00053 epik); 2.88 s
+                                        : -9.770 kcal/mol (-9.77 gscore + 0.00053 epik); 2.88 s
+                                        : -10.181 kcal/mol (-10.2 gscore + 0.00053 epik); 2.88 s
+                                        : -9.905 kcal/mol (-9.91 gscore + 0.00053 epik); 2.88 s
+                                        : -9.293 kcal/mol (-9.29 gscore + 0.00053 epik); 2.88 s
+                                        : -9.440 kcal/mol (-9.44 gscore + 0.00053 epik); 2.88 s
+                                        : -9.457 kcal/mol (-9.46 gscore + 0.00053 epik); 2.88 s
+                                        : -8.675 kcal/mol (-8.68 gscore + 0.00053 epik); 2.88 s
+                                        : -9.599 kcal/mol (-9.6 gscore + 0.00053 epik); 2.88 s
+                                        : -8.702 kcal/mol (-8.7 gscore + 0.00053 epik); 2.88 s
+                                        : -9.211 kcal/mol (-9.21 gscore + 0.00053 epik); 2.88 s
+                                        : -8.590 kcal/mol (-8.59 gscore + 0.00053 epik); 2.88 s
+                                        : -8.646 kcal/mol (-8.65 gscore + 0.00053 epik); 2.88 s
+                                        : -8.888 kcal/mol (-8.89 gscore + 0.00053 epik); 2.88 s
+                                        : -9.258 kcal/mol (-9.26 gscore + 0.00053 epik); 2.88 s
+
+== End ligand loop ==
+
+
+                                  Glide Sort                                  
+------------------------------------------------------------------------------
+REPORT OF BEST 796 POSES
+
+The sorted ligand structures were written to the file:
+    flexible_sp_lib.maegz
+
+Final rankings based on original docking score.
+
+0 poses were rejected by the energy filters,
+    Coul+vdw Energy    <=     0.0
+    Hbond Interaction  <=     0.0
+    Metal Interaction  <=    10.0
+    GlideScore         <=   100.0
+    Docking Score      <=   100.0
+(If any of the above properties is not defined for a given pose,
+ the corresponding filter is not applied to that pose.)
+
+
+Exiting Glide
+Date: Sunday, September 13 2026, at 11:30:19 PM +0900
+CPU time (s): 161.2 user, 0.4 sys, 162.6 real
+Total elapsed time = 163 seconds (2 minutes and 43 seconds)

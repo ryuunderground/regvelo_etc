@@ -1,0 +1,21 @@
+{
+  "target": "ESR1",
+  "returncode": 0,
+  "normal_engine_completion": true,
+  "elapsed_seconds": 172.6703109741211,
+  "scratch_directory": "/tmp/bpa_flexible_five_ESR1_c_b95cvm",
+  "input_sha256": "30967cbb7c607a18b81776da90f7210eb088456eadc54a32310d86b756fd6011",
+  "grid_sha256": "425e92711d15cd3f9244c7eab9e36837cb8793ffc29534e0d6c512073d1cd463",
+  "configuration_sha256": "1d00269a31b9e955cc9f9b8aaf649e93d0530aba1476e676bf51ea9f4ece2b66",
+  "pose_file": "/bigkim_home/CaptainDo/BPA_derivate_receptor/benchmark_db/bpa_pose_embedding_alignment_20260913/flexible_five_v1/docking/ESR1/flexible_sp_lib.maegz",
+  "pose_sha256": "6611e00567ca30fa575f57bfa8df73bcd538c7bcb92ab6f55e0adf4ab2a29667",
+  "output_sha256": {
+    "flexible_sp.in": "1d00269a31b9e955cc9f9b8aaf649e93d0530aba1476e676bf51ea9f4ece2b66",
+    "flexible_sp_raw.maegz": "f44ed2964b3f58273a17a2dcd64e581efe53f76f8d9519dfbc63e7195759dba2",
+    "flexible_sp_lib.maegz": "6611e00567ca30fa575f57bfa8df73bcd538c7bcb92ab6f55e0adf4ab2a29667",
+    "flexible_sp.csv": "c6b36a502f9fb8751057c1d3a6d83cb6674de1fb59a42c9c4f3fedc064bc8a9f",
+    "flexible_sp_skip.csv": "011af219c77fa62e4fdcee8e5957bf713a994801d86caa4c7cdfa7eb89258785",
+    "stdout.log": "694fbf66b7bfb504c5090bcb8f94e2d38ac13873bd441979f7a212bac6dfa3a4"
+  },
+  "status": "COMPLETED_REQUIRES_POSE_QC"
+}

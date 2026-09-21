@@ -1,0 +1,21 @@
+{
+  "target": "ESRRG",
+  "returncode": 0,
+  "normal_engine_completion": true,
+  "elapsed_seconds": 159.17646861076355,
+  "scratch_directory": "/tmp/bpa_flexible_five_ESRRG_cvokp5y7",
+  "input_sha256": "b60b16e589b085eef781845f9d07a14172c1b298bc4a167c25a4f210ce06d0c0",
+  "grid_sha256": "6cb2424f34f489163a0da9f9d1e37d5ffbf0291edb35c4d0bc8df8e04803d3b7",
+  "configuration_sha256": "0a4d464ae78267230b6758003ccf082ea4b4f02a3c61f965de49b2e326f34510",
+  "pose_file": "/bigkim_home/CaptainDo/BPA_derivate_receptor/benchmark_db/bpa_pose_embedding_alignment_20260913/flexible_five_v1/docking/ESRRG/flexible_sp_lib.maegz",
+  "pose_sha256": "7e04e734bbb8b901a04b157db91e7d3e0bcfa314d1aa55f2a1b49203ae586e60",
+  "output_sha256": {
+    "flexible_sp.in": "0a4d464ae78267230b6758003ccf082ea4b4f02a3c61f965de49b2e326f34510",
+    "flexible_sp_raw.maegz": "57973a9154dbc317c63fcdbf7cfbe2494d9eb5760f8dd3d3a25fa4142edad3ed",
+    "flexible_sp_lib.maegz": "7e04e734bbb8b901a04b157db91e7d3e0bcfa314d1aa55f2a1b49203ae586e60",
+    "flexible_sp.csv": "fbaacf524d35eefceaa7bc04fbad6b9142feaf1cb3f071f313dd7ce31048a342",
+    "flexible_sp_skip.csv": "c2ae5cc1188d2db9a29edca09ff81fb9be88c9c06b80ec4d82d92b34a823b6e6",
+    "stdout.log": "c8a8f6afa7931189ab12c40b673ec9254812375a7af2cbf73cfb109056279ab9"
+  },
+  "status": "COMPLETED_REQUIRES_POSE_QC"
+}
