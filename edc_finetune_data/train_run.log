@@ -117,3 +117,97 @@ fused_softmax is not installed corrected
 2026-09-21 08:01:02 | INFO | unimol.data.resampling_dataset | ResamplingDataset.set_epoch: 1
 2026-09-21 08:01:02 | INFO | unicore.trainer | begin training epoch 1
 2026-09-21 08:01:02 | INFO | unicore_cli.train | Start iterating over samples
+2026-09-21 08:02:03 | INFO | train_inner | epoch 001:     20 / 246 scale=13.995, loss=5.538, ups=0.34, bsz=8, num_updates=20, lr=4.54545e-06, gnorm=229.773, clip=100, train_wall=60.8, wall=62
+2026-09-21 08:03:03 | INFO | train_inner | epoch 001:     40 / 246 scale=13.995, loss=5.326, ups=0.33, bsz=8, num_updates=40, lr=9.09091e-06, gnorm=219.129, clip=100, train_wall=59.21, wall=121
+2026-09-21 08:04:09 | INFO | train_inner | epoch 001:     60 / 246 scale=13.995, loss=5.597, ups=0.3, bsz=8, num_updates=60, lr=9.77044e-06, gnorm=192.519, clip=100, train_wall=65.28, wall=187
+2026-09-21 08:05:15 | INFO | train_inner | epoch 001:     80 / 246 scale=13.995, loss=5.12, ups=0.3, bsz=8, num_updates=80, lr=9.4835e-06, gnorm=206.408, clip=100, train_wall=65.83, wall=253
+2026-09-21 08:06:14 | INFO | train_inner | epoch 001:    100 / 246 scale=13.995, loss=5.32, ups=0.34, bsz=7.7, num_updates=100, lr=9.19656e-06, gnorm=209.306, clip=95, train_wall=57.87, wall=312
+2026-09-21 08:07:14 | INFO | train_inner | epoch 001:    120 / 246 scale=13.995, loss=5.119, ups=0.33, bsz=8, num_updates=120, lr=8.90961e-06, gnorm=214.509, clip=100, train_wall=59.8, wall=372
+2026-09-21 08:08:15 | INFO | train_inner | epoch 001:    140 / 246 scale=13.995, loss=4.527, ups=0.33, bsz=8, num_updates=140, lr=8.62267e-06, gnorm=179.771, clip=100, train_wall=60.07, wall=433
+2026-09-21 08:09:17 | INFO | train_inner | epoch 001:    160 / 246 scale=13.995, loss=4.893, ups=0.32, bsz=8, num_updates=160, lr=8.33572e-06, gnorm=179.405, clip=100, train_wall=61.87, wall=495
+2026-09-21 08:10:18 | INFO | train_inner | epoch 001:    180 / 246 scale=13.995, loss=4.585, ups=0.33, bsz=8, num_updates=180, lr=8.04878e-06, gnorm=184.224, clip=100, train_wall=60.78, wall=556
+2026-09-21 08:11:28 | INFO | train_inner | epoch 001:    200 / 246 scale=13.995, loss=4.919, ups=0.28, bsz=8, num_updates=200, lr=7.76184e-06, gnorm=206.034, clip=100, train_wall=69.8, wall=627
+2026-09-21 08:12:36 | INFO | train_inner | epoch 001:    220 / 246 scale=13.995, loss=4.591, ups=0.3, bsz=8, num_updates=220, lr=7.47489e-06, gnorm=219.004, clip=100, train_wall=67.06, wall=694
+2026-09-21 08:13:45 | INFO | train_inner | epoch 001:    240 / 246 scale=13.995, loss=4.729, ups=0.29, bsz=8, num_updates=240, lr=7.18795e-06, gnorm=193.801, clip=100, train_wall=68.13, wall=763
+2026-09-21 08:14:06 | INFO | unicore_cli.train | begin validation on "valid" subset
+2026-09-21 08:14:06 | INFO | unicore.tasks.unicore_task | get EpochBatchIterator for epoch 1
+torch.Size([224]) torch.Size([216, 8])
+2026-09-21 08:14:22 | INFO | valid | epoch 001 | valid on 'valid' subset | scale 13.995 | loss 2.35 | valid_acc 0.58 | valid_neg_loss -2.35 | valid_auc 0.878 | valid_bedroc 0.565 | valid_top3_acc 0.894 | bsz 224 | num_updates 246
+2026-09-21 08:14:22 | INFO | unicore.checkpoint_utils | Preparing to save checkpoint for epoch 1 @ 246 updates
+2026-09-21 08:14:22 | INFO | unicore.trainer | Saving checkpoint to tmp_save_dir/checkpoint1.pt
+2026-09-21 08:14:22 | INFO | unicore.trainer | Finished saving checkpoint to tmp_save_dir/checkpoint1.pt
+2026-09-21 08:14:22 | INFO | unicore.checkpoint_utils | Saved checkpoint tmp_save_dir/checkpoint1.pt (epoch 1 @ 246 updates, score 0.565) (writing took 0.5061730425804853 seconds)
+2026-09-21 08:14:22 | INFO | unicore.checkpoint_utils | copy tmp_save_dir/checkpoint1.pt to save_dir/checkpoint1.pt
+2026-09-21 08:14:22 | INFO | unicore_cli.train | end of epoch 1 (average epoch stats below)
+2026-09-21 08:14:22 | INFO | train | epoch 001 | scale 13.995 | loss 4.999 | ups 0.31 | bsz 8 | num_updates 246 | lr 7.10187e-06 | gnorm 203.214 | clip 99.6 | train_wall 778.05 | wall 800
+2026-09-21 08:14:22 | INFO | unicore.tasks.unicore_task | get EpochBatchIterator for epoch 2
+2026-09-21 08:14:22 | INFO | unimol.data.resampling_dataset | ResamplingDataset.set_epoch: 2
+2026-09-21 08:14:22 | INFO | unimol.data.resampling_dataset | ResamplingDataset.set_epoch: 2
+2026-09-21 08:14:22 | INFO | unicore.trainer | begin training epoch 2
+2026-09-21 08:14:22 | INFO | unicore_cli.train | Start iterating over samples
+2026-09-21 08:14:22 | INFO | unicore.checkpoint_utils | copy tmp_save_dir/checkpoint1.pt to save_dir/checkpoint_best.pt
+2026-09-21 08:14:22 | INFO | unicore.checkpoint_utils | copy tmp_save_dir/checkpoint1.pt to save_dir/checkpoint_last.pt
+2026-09-21 08:14:23 | INFO | unicore.checkpoint_utils | removing temp file tmp_save_dir/checkpoint1.pt ...
+2026-09-21 08:14:23 | INFO | unicore.checkpoint_utils | finished async ckp saving.
+2026-09-21 08:15:11 | INFO | train_inner | epoch 002:     14 / 246 scale=13.995, loss=4.221, ups=0.23, bsz=8, num_updates=260, lr=6.901e-06, gnorm=202.806, clip=100, train_wall=69.64, wall=849
+2026-09-21 08:16:24 | INFO | train_inner | epoch 002:     34 / 246 scale=13.995, loss=3.812, ups=0.27, bsz=8, num_updates=280, lr=6.61406e-06, gnorm=208.804, clip=100, train_wall=72.4, wall=922
+2026-09-21 08:17:36 | INFO | train_inner | epoch 002:     54 / 246 scale=13.995, loss=4.245, ups=0.27, bsz=8, num_updates=300, lr=6.32712e-06, gnorm=178.287, clip=100, train_wall=72.35, wall=995
+2026-09-21 08:18:47 | INFO | train_inner | epoch 002:     74 / 246 scale=13.995, loss=4.307, ups=0.28, bsz=8, num_updates=320, lr=6.04017e-06, gnorm=173.872, clip=100, train_wall=69.85, wall=1065
+2026-09-21 08:19:49 | INFO | train_inner | epoch 002:     94 / 246 scale=13.995, loss=4.836, ups=0.32, bsz=8, num_updates=340, lr=5.75323e-06, gnorm=204.316, clip=100, train_wall=62.22, wall=1128
+2026-09-21 08:20:52 | INFO | train_inner | epoch 002:    114 / 246 scale=13.995, loss=4.172, ups=0.32, bsz=8, num_updates=360, lr=5.46628e-06, gnorm=193.767, clip=100, train_wall=61.89, wall=1190
+2026-09-21 08:21:56 | INFO | train_inner | epoch 002:    134 / 246 scale=13.995, loss=4.206, ups=0.31, bsz=8, num_updates=380, lr=5.17934e-06, gnorm=246.211, clip=100, train_wall=64.19, wall=1255
+2026-09-21 08:22:59 | INFO | train_inner | epoch 002:    154 / 246 scale=13.995, loss=4.32, ups=0.32, bsz=8, num_updates=400, lr=4.8924e-06, gnorm=163.786, clip=100, train_wall=62.34, wall=1317
+2026-09-21 08:24:07 | INFO | train_inner | epoch 002:    174 / 246 scale=13.995, loss=4.18, ups=0.29, bsz=8, num_updates=420, lr=4.60545e-06, gnorm=168.105, clip=100, train_wall=67.43, wall=1385
+2026-09-21 08:25:13 | INFO | train_inner | epoch 002:    194 / 246 scale=13.995, loss=3.906, ups=0.3, bsz=8, num_updates=440, lr=4.31851e-06, gnorm=183.704, clip=100, train_wall=65.08, wall=1451
+2026-09-21 08:26:14 | INFO | train_inner | epoch 002:    214 / 246 scale=13.995, loss=3.988, ups=0.33, bsz=7.7, num_updates=460, lr=4.03156e-06, gnorm=186.585, clip=95, train_wall=60.78, wall=1512
+2026-09-21 08:27:18 | INFO | train_inner | epoch 002:    234 / 246 scale=13.995, loss=3.914, ups=0.31, bsz=8, num_updates=480, lr=3.74462e-06, gnorm=173.673, clip=100, train_wall=63.99, wall=1577
+2026-09-21 08:27:58 | INFO | unicore_cli.train | begin validation on "valid" subset
+2026-09-21 08:27:58 | INFO | unicore.tasks.unicore_task | get EpochBatchIterator for epoch 1
+torch.Size([224]) torch.Size([216, 8])
+2026-09-21 08:28:13 | INFO | valid | epoch 002 | valid on 'valid' subset | scale 13.995 | loss 2.151 | valid_acc 0.594 | valid_neg_loss -2.151 | valid_auc 0.882 | valid_bedroc 0.579 | valid_top3_acc 0.903 | bsz 224 | num_updates 492 | best_valid_bedroc 0.579
+2026-09-21 08:28:13 | INFO | unicore.checkpoint_utils | Preparing to save checkpoint for epoch 2 @ 492 updates
+2026-09-21 08:28:13 | INFO | unicore.trainer | Saving checkpoint to tmp_save_dir/checkpoint2.pt
+2026-09-21 08:28:13 | INFO | unicore.trainer | Finished saving checkpoint to tmp_save_dir/checkpoint2.pt
+2026-09-21 08:28:13 | INFO | unicore.checkpoint_utils | Saved checkpoint tmp_save_dir/checkpoint2.pt (epoch 2 @ 492 updates, score 0.579) (writing took 0.5519701251760125 seconds)
+2026-09-21 08:28:13 | INFO | unicore.checkpoint_utils | copy tmp_save_dir/checkpoint2.pt to save_dir/checkpoint2.pt
+2026-09-21 08:28:13 | INFO | unicore_cli.train | end of epoch 2 (average epoch stats below)
+2026-09-21 08:28:13 | INFO | train | epoch 002 | scale 13.995 | loss 4.194 | ups 0.3 | bsz 8 | num_updates 492 | lr 3.57245e-06 | gnorm 191.682 | clip 99.6 | train_wall 809.97 | wall 1632
+2026-09-21 08:28:13 | INFO | unicore.tasks.unicore_task | get EpochBatchIterator for epoch 3
+2026-09-21 08:28:13 | INFO | unimol.data.resampling_dataset | ResamplingDataset.set_epoch: 3
+2026-09-21 08:28:13 | INFO | unimol.data.resampling_dataset | ResamplingDataset.set_epoch: 3
+2026-09-21 08:28:13 | INFO | unicore.trainer | begin training epoch 3
+2026-09-21 08:28:13 | INFO | unicore_cli.train | Start iterating over samples
+2026-09-21 08:28:13 | INFO | unicore.checkpoint_utils | copy tmp_save_dir/checkpoint2.pt to save_dir/checkpoint_best.pt
+2026-09-21 08:28:14 | INFO | unicore.checkpoint_utils | copy tmp_save_dir/checkpoint2.pt to save_dir/checkpoint_last.pt
+2026-09-21 08:28:14 | INFO | unicore.checkpoint_utils | removing temp file tmp_save_dir/checkpoint2.pt ...
+2026-09-21 08:28:14 | INFO | unicore.checkpoint_utils | finished async ckp saving.
+2026-09-21 08:28:40 | INFO | train_inner | epoch 003:      8 / 246 scale=13.995, loss=4.268, ups=0.25, bsz=8, num_updates=500, lr=3.45768e-06, gnorm=238.629, clip=100, train_wall=65.87, wall=1658
+2026-09-21 08:29:46 | INFO | train_inner | epoch 003:     28 / 246 scale=13.995, loss=4.061, ups=0.3, bsz=8, num_updates=520, lr=3.17073e-06, gnorm=215.562, clip=100, train_wall=65.28, wall=1724
+2026-09-21 08:30:53 | INFO | train_inner | epoch 003:     48 / 246 scale=13.995, loss=3.902, ups=0.3, bsz=8, num_updates=540, lr=2.88379e-06, gnorm=250.152, clip=100, train_wall=66.33, wall=1791
+2026-09-21 08:32:09 | INFO | train_inner | epoch 003:     68 / 246 scale=13.995, loss=4.046, ups=0.26, bsz=8, num_updates=560, lr=2.59684e-06, gnorm=186.049, clip=100, train_wall=76.16, wall=1868
+2026-09-21 08:33:30 | INFO | train_inner | epoch 003:     88 / 246 scale=13.995, loss=3.902, ups=0.25, bsz=8, num_updates=580, lr=2.3099e-06, gnorm=183.914, clip=100, train_wall=80.05, wall=1948
+2026-09-21 08:34:49 | INFO | train_inner | epoch 003:    108 / 246 scale=13.995, loss=4.221, ups=0.25, bsz=8, num_updates=600, lr=2.02296e-06, gnorm=166.418, clip=100, train_wall=78.58, wall=2027
+2026-09-21 08:36:09 | INFO | train_inner | epoch 003:    128 / 246 scale=13.995, loss=3.784, ups=0.25, bsz=7.7, num_updates=620, lr=1.73601e-06, gnorm=186.155, clip=95, train_wall=78.29, wall=2106
+2026-09-21 08:51:09 | INFO | train_inner | epoch 003:    148 / 246 scale=13.995, loss=3.77, ups=0.22, bsz=8, num_updates=640, lr=1.44907e-06, gnorm=163.531, clip=100, train_wall=90.41, wall=2197
+2026-09-21 08:52:56 | INFO | train_inner | epoch 003:    168 / 246 scale=13.995, loss=4.007, ups=0.2, bsz=8, num_updates=660, lr=1.16212e-06, gnorm=238.292, clip=100, train_wall=100.77, wall=2298
+2026-09-21 09:10:13 | INFO | train_inner | epoch 003:    188 / 246 scale=13.995, loss=4.495, ups=0.24, bsz=8, num_updates=680, lr=8.75179e-07, gnorm=223.264, clip=100, train_wall=83.4, wall=2382
+2026-09-21 09:11:34 | INFO | train_inner | epoch 003:    208 / 246 scale=13.995, loss=4.071, ups=0.25, bsz=8, num_updates=700, lr=5.88235e-07, gnorm=171.935, clip=100, train_wall=80.45, wall=2463
+2026-09-21 09:15:08 | INFO | train_inner | epoch 003:    228 / 246 scale=13.995, loss=3.995, ups=0.09, bsz=8, num_updates=720, lr=3.01291e-07, gnorm=225.949, clip=100, train_wall=212.35, wall=2676
+2026-09-21 09:16:52 | INFO | unicore_cli.train | begin validation on "valid" subset
+2026-09-21 09:16:52 | INFO | unicore.tasks.unicore_task | get EpochBatchIterator for epoch 1
+torch.Size([224]) torch.Size([216, 8])
+2026-09-21 09:17:16 | INFO | valid | epoch 003 | valid on 'valid' subset | scale 13.995 | loss 2.088 | valid_acc 0.612 | valid_neg_loss -2.088 | valid_auc 0.884 | valid_bedroc 0.597 | valid_top3_acc 0.903 | bsz 224 | num_updates 738 | best_valid_bedroc 0.597
+2026-09-21 09:17:16 | INFO | unicore.checkpoint_utils | Preparing to save checkpoint for epoch 3 @ 738 updates
+2026-09-21 09:17:16 | INFO | unicore.trainer | Saving checkpoint to tmp_save_dir/checkpoint3.pt
+2026-09-21 09:17:17 | INFO | unicore.trainer | Finished saving checkpoint to tmp_save_dir/checkpoint3.pt
+2026-09-21 09:17:17 | INFO | unicore.checkpoint_utils | Saved checkpoint tmp_save_dir/checkpoint3.pt (epoch 3 @ 738 updates, score 0.597) (writing took 0.7304603746160865 seconds)
+2026-09-21 09:17:17 | INFO | unicore_cli.train | end of epoch 3 (average epoch stats below)
+2026-09-21 09:17:17 | INFO | unicore.checkpoint_utils | copy tmp_save_dir/checkpoint3.pt to save_dir/checkpoint3.pt
+2026-09-21 09:17:17 | INFO | train | epoch 003 | scale 13.995 | loss 4.004 | ups 0.21 | bsz 8 | num_updates 738 | lr 4.30416e-08 | gnorm 200.444 | clip 99.6 | train_wall 1143.01 | wall 2806
+2026-09-21 09:17:17 | INFO | unicore.tasks.unicore_task | get EpochBatchIterator for epoch 4
+2026-09-21 09:17:17 | INFO | unimol.data.resampling_dataset | ResamplingDataset.set_epoch: 4
+2026-09-21 09:17:18 | INFO | unicore.checkpoint_utils | copy tmp_save_dir/checkpoint3.pt to save_dir/checkpoint_best.pt
+2026-09-21 09:17:18 | INFO | unicore.checkpoint_utils | copy tmp_save_dir/checkpoint3.pt to save_dir/checkpoint_last.pt
+2026-09-21 09:17:18 | INFO | unicore.checkpoint_utils | removing temp file tmp_save_dir/checkpoint3.pt ...
+2026-09-21 09:17:18 | INFO | unicore.checkpoint_utils | finished async ckp saving.
+2026-09-21 09:17:18 | INFO | unicore_cli.train | done training in 2805.3 seconds

@@ -20,3 +20,8 @@ __pycache__/
 edc_finetune_data/save_dir/
 edc_finetune_data/tmp_save_dir/
 edc_finetune_data/*.lmdb-lock
+edc_finetune_data/*.lmdb-lock
+bpa_panel/finetuned_eval/*.pkl
+DrugCLIP/data/emb_old/
+DrugCLIP/data/emb_new/
+DrugCLIP/data/emb_bpa_new/
