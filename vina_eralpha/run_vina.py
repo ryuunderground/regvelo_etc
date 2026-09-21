@@ -117,6 +117,8 @@ def main():
     ap.add_argument("--limit", type=int, default=0, help="timing probe: dock only N")
     ap.add_argument("--exhaustiveness", type=int, default=8)
     ap.add_argument("--cid-file", default="", help="dock exactly these CIDs (one per line)")
+    ap.add_argument("--smiles-csv", default="",
+                    help="dock rows of a csv with id/label/smiles columns (ChEMBL etc)")
     ap.add_argument("--out-prefix", default="results", help="results file prefix")
     ap.add_argument("--shard", type=int, default=0)
     ap.add_argument("--nshards", type=int, default=1)
@@ -126,6 +128,18 @@ def main():
     T = tox21()
     smiles = {r["cid"]: r["smiles"] for r in csv.DictReader(open(f"{EDC}/library_smiles.csv"))}
     clean = set(json.load(open("clean_actives.json"))) if os.path.exists("clean_actives.json") else set()
+
+    if args.smiles_csv:
+        # ChEMBL ids are not in library_smiles.csv, so carry the SMILES through
+        rows = list(csv.DictReader(open(args.smiles_csv)))
+        key = "chembl_id" if "chembl_id" in rows[0] else "id"
+        smiles.update({r[key]: r["smiles"] for r in rows})
+        todo = [(r[key], r["label"]) for r in rows]
+        random.seed(1)
+        random.shuffle(todo)
+        if args.nshards > 1:
+            todo = todo[args.shard::args.nshards]
+        return dock_list(todo, args, smiles)
 
     if args.cid_file:
         wanted = [c.strip() for c in open(args.cid_file) if c.strip()]
@@ -154,18 +168,22 @@ def main():
     return dock_list(todo, args)
 
 
-def dock_list(todo, args):
-    """Dock a (cid, outcome) list, resuming from whatever is already scored."""
-    smiles = {r["cid"]: r["smiles"]
-              for r in csv.DictReader(open(f"{EDC}/library_smiles.csv"))}
+def dock_list(todo, args, smiles=None):
+    """Dock a (id, outcome) list, resuming from whatever is already scored."""
+    if smiles is None:
+        smiles = {r["cid"]: r["smiles"]
+                  for r in csv.DictReader(open(f"{EDC}/library_smiles.csv"))}
     out_path = (f"{args.out_prefix}.csv" if args.nshards == 1
                 else f"{args.out_prefix}_{args.shard}.csv")
     # a CID scored under any prefix or shard is done -- shard assignment shifts
     # when the compound list changes, so checking only this file re-docks them
     done = set()
-    for f_ in glob.glob(f"{args.out_prefix}*.csv"):
+    for f_ in glob.glob(f"{args.out_prefix}_*.csv"):
         for r in csv.DictReader(open(f_)):
-            if r["vina_affinity"]:
+            # tolerate any same-prefixed file that is not a results file: the
+            # input chembl_sample.csv got caught by this glob and the KeyError
+            # killed every shard before it docked anything
+            if r.get("vina_affinity"):
                 done.add(r["cid"])
     todo = [t for t in todo if t[0] not in done]
     print(f"shard {args.shard}: {len(todo)} to dock ({len(done)} already scored)", flush=True)
