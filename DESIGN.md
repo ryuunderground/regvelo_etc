@@ -133,10 +133,10 @@ Tox21은 리셉터마다 다른 화합물 세트가 아니라 **거의 같은 ~1
 2. ~~ChEMBL + Tox21 합쳐서 hard-negative 파인튜닝 데이터셋 구축~~ **1차 완료** (`edc_finetune_data/`) — Tox21 5개 리셉터(ERα, AR, PPARγ, PR, THRβ) 실측 assay를 merge, "다른 리셉터엔 active인데 여기는 inactive" 조건으로 hard-negative pair 구성. **5,164 pairs (positive 2,190 / hard_negative 2,974), 화합물 1,555개** — 11개 BPA류 CID는 전부 제외 확인.
    - ~~SMILES + 3D 컨포머 생성~~ **완료** — PubChem에서 1555/1555 SMILES 확보, RDKit으로 1551/1555 컨포머 생성 (`mols_edc_panel.lmdb`)
    - ChEMBL 병합, ERβ/ERRγ Tox21 보강은 아직 — 지금 있는 5개 리셉터(ERα/AR/PPARγ/PR/THRβ, 포켓은 `bpa_panel/`에 이미 있음)만으로 3번(파인튜닝) 먼저 시도 가능한 상태
-3. DrugCLIP hard-negative 파인튜닝 (9/11 방식을 도메인 전체로 확장)
-4. 도메인 내 held-out 리셉터 평가 + 완전 unseen 리셉터 평가를 분리해서 보고
-5. BPA 패널 재실행, 파인튜닝 전/후 비교
-6. IGModel 설치, Uni-Mol Docking V2 출력 재채점에 연결
+3. ~~DrugCLIP hard-negative 파인튜닝~~ **완료** — `checkpoint_best.pt`에서 이어서(from-scratch 아님) lr=1e-5로 3 epoch, CPU 47분. `valid_bedroc`이 epoch마다 개선(0.565→0.579→0.597), 9/10·9/13에서 봤던 퇴화 없음. 학습 경로에 남아있던 CUDA 하드코딩 버그 2곳도 이번에 마저 고침 (`DrugCLIP/unimol/models/drugclip.py`, `unimol/losses/cross_entropy.py`)
+4. ~~도메인 내 held-out 리셉터 평가~~ **완료(부분)** — 완전 unseen 리셉터 평가는 아직 (ERβ/ERRγ가 이번 학습 데이터엔 없어서 이게 그 역할을 겸함). Leakage 없는 평가셋(valid-split positive + 학습에 전혀 안 쓰인 hard_negative 전체, 3,203쌍)에서 **AUROC 0.5541 → 0.6181**
+5. ~~BPA 패널 재실행, 파인튜닝 전/후 비교~~ **완료** (`bpa_panel/finetuned_eval/`) — ERRγ가 ERα를 제치고 BPA 1위로 올라옴 (문헌상 가장 강한 확인된 친화도 쪽으로 이동), AR은 여전히 ERα/ERRγ보다 뚜렷하게 낮음 (0.4278 vs 0.6216) — hard-negative 파인튜닝이 겨냥했던 AR/ERα 혼동 재발 안 함
+6. IGModel 설치, Uni-Mol Docking V2 출력 재채점에 연결 — 다음 단계
 
 ## 참고
 
