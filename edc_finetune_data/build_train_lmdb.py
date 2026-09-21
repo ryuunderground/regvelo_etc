@@ -49,10 +49,19 @@ def main():
     mols = load_mols()
     print("pockets available:", list(pockets.keys()))
 
+    all_rows = list(csv.DictReader(open("pairs.csv")))
     positives = [
-        row for row in csv.DictReader(open("pairs.csv"))
+        row for row in all_rows
         if row["label"] == "positive" and row["cid"] in mols and row["receptor"] in pockets
     ]
+
+    # every panel receptor a compound is active at. Goes into each LMDB entry so
+    # the in-batch softmax can mask a promiscuous compound as a false negative at
+    # the *other* receptors it really binds, not just at the one it is paired with.
+    actives = {}
+    for row in all_rows:
+        if row["label"] == "positive" and row["receptor"] in pockets:
+            actives.setdefault(row["cid"], set()).add(row["receptor"])
     print(f"{len(positives)} usable positive pairs "
           f"(of {sum(1 for r in csv.DictReader(open('pairs.csv')) if r['label']=='positive')} total positive rows)")
 
@@ -77,6 +86,7 @@ def main():
                     "pocket_atoms": pocket["pocket_atoms"],
                     "pocket_coordinates": pocket["pocket_coordinates"],
                     "pocket": pocket["pocket"],
+                    "actives": "|".join(sorted(actives[row["cid"]])),
                     "label": 1,
                 }
                 txn.put(str(i).encode(), pickle.dumps(entry))

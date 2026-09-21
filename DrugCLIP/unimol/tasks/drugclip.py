@@ -183,6 +183,10 @@ class DrugCLIP(UnicoreTask):
         """
         data_path = os.path.join(self.args.data, split + ".lmdb")
         dataset = LMDBDataset(data_path)
+        # every receptor this compound is active at, for false-negative masking.
+        # AffinityDataset rebuilds a fixed dict, so read it off the raw LMDB.
+        # Older LMDBs without the field fall back to the pocket name (= old behaviour).
+        act_dataset = KeyDataset(dataset, "actives" if "actives" in dataset[0] else "pocket")
         if split.startswith("train"):
             smi_dataset = KeyDataset(dataset, "smi")
             poc_dataset = KeyDataset(dataset, "pocket")
@@ -317,6 +321,7 @@ class DrugCLIP(UnicoreTask):
                 },
                 "smi_name": RawArrayDataset(smi_dataset),
                 "pocket_name": RawArrayDataset(poc_dataset),
+                "pocket_actives": RawArrayDataset(act_dataset),
             },
         )
         if split == "train":

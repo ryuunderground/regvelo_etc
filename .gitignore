@@ -19,6 +19,11 @@ __pycache__/
 .DS_Store
 edc_finetune_data/save_dir/
 edc_finetune_data/tmp_save_dir/
+edc_finetune_data/save_dir_v2/
+edc_finetune_data/tmp_save_dir_v2/
+edc_finetune_data/restore_checkpoint.pt
+edc_finetune_data/mols_edc_conformers.lmdb
+*.bak
 edc_finetune_data/*.lmdb-lock
 edc_finetune_data/*.lmdb-lock
 bpa_panel/finetuned_eval/*.pkl

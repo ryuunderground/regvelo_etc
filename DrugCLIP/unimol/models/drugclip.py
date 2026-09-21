@@ -112,6 +112,7 @@ class BindingAffinityModel(BaseUnicoreModel):
         pocket_src_edge_type,
         smi_list=None,
         pocket_list=None,
+        actives_list=None,
         encode=False,
         masked_tokens=None,
         features_only=True,
@@ -173,16 +174,21 @@ class BindingAffinityModel(BaseUnicoreModel):
         
         bsz = ba_predict.shape[0]
         
-        pockets = np.array(pocket_list, dtype=str)
-        pockets = np.expand_dims(pockets, 1)
-        matrix1 = np.repeat(pockets, len(pockets), 1)
-        matrix2 = np.repeat(np.transpose(pockets), len(pockets), 0)
-        pocket_duplicate_matrix = matrix1==matrix2
-        pocket_duplicate_matrix = 1*pocket_duplicate_matrix
-        # ponytail: hardcoded .cuda() crashes on CPU-only machines (training
-        # path only, inference bypasses forward()); move to whatever device
-        # the model's own tensors are already on instead.
-        pocket_duplicate_matrix = torch.tensor(pocket_duplicate_matrix, dtype=ba_predict.dtype).to(ba_predict.device)
+        # Mask (pocket i, mol j) whenever mol j is a KNOWN active at pocket i --
+        # not just when row j happens to carry the same pocket. Compounds active
+        # at several receptors of the same family otherwise land in the softmax
+        # as false negatives (~29% of the negatives used on the EDC panel).
+        # actives_list[j] is "ERalpha|PR"-style; absent -> falls back to the
+        # pocket name, i.e. exactly the old same-pocket behaviour.
+        if actives_list is None:
+            actives_list = pocket_list
+        actives = [set(str(a).split("|")) for a in actives_list]
+        pocket_duplicate_matrix = torch.tensor(
+            [[1 if pocket_list[i] in actives[j] else 0 for j in range(len(pocket_list))]
+             for i in range(len(pocket_list))],
+            # ponytail: hardcoded .cuda() crashes on CPU-only machines (training
+            # path only, inference bypasses forward()); follow the model instead.
+            dtype=ba_predict.dtype).to(ba_predict.device)
 
         mols = np.array(smi_list, dtype=str)
         mols = np.expand_dims(mols, 1)

@@ -533,6 +533,7 @@ class IBSLoss(CrossEntropyLoss):
             **sample["net_input"],
             smi_list = sample["smi_name"],
             pocket_list = sample["pocket_name"],
+            actives_list = sample.get("pocket_actives"),
             features_only=True,
             fix_encoder=fix_encoder,
             is_train = self.training
