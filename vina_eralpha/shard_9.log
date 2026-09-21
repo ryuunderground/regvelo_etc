@@ -1,0 +1,17 @@
+shard 9: 11 to dock (14 done)
+Traceback (most recent call last):
+  File "/Users/dudnqux/Documents/github/regvelo/drugclip/vina_eralpha/run_vina.py", line 166, in <module>
+    sys.exit(main())
+  File "/Users/dudnqux/Documents/github/regvelo/drugclip/vina_eralpha/run_vina.py", line 154, in main
+    score = dock(p, b, args.exhaustiveness) if p else None
+  File "/Users/dudnqux/Documents/github/regvelo/drugclip/vina_eralpha/run_vina.py", line 93, in dock
+    r = subprocess.run(cmd, capture_output=True, text=True, timeout=900)
+  File "/Users/dudnqux/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/subprocess.py", line 505, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/Users/dudnqux/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/subprocess.py", line 1154, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/Users/dudnqux/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/subprocess.py", line 2022, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/Users/dudnqux/.local/share/uv/python/cpython-3.10-macos-aarch64-none/lib/python3.10/subprocess.py", line 1198, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['vina', '--receptor', 'receptor.pdbqt', '--ligand', 'ligands/60196264.pdbqt', '--center_x', '-4.700', '--center_y', '-3.613', '--center_z', '21.493', '--size_x', '24.770', '--size_y', '20.373', '--size_z', '20.593', '--exhaustiveness', '8', '--cpu', '1', '--seed', '1', '--out', 'ligands/60196264_out.pdbqt']' timed out after 900 seconds

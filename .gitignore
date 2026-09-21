@@ -34,3 +34,7 @@ DrugCLIP/data/emb_bpa_new/
 # third-party clone (~1GB with history; 144MB of bundled weights)
 # setup recipe is in bpa_panel/docking/igmodel_score.py
 IGModel/
+
+# Vina intermediates -- regenerable from library_smiles.csv via run_vina.py
+vina_eralpha/ligands/
+vina_eralpha/receptor.pdb
